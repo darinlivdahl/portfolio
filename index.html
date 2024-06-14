@@ -1,38 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Darin Livdahl</title>
-        <meta charset="utf-8">
-        <meta name="description" content="My personal website. Stuff about me.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-       <header class="header-global">
-            <div class="header-global__id">
-                <h1><a href="">Darin Livdahl</a></h1>
-                <p>Tagline here.</p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darin Livdahl</title>
+    <script src="https://kit.fontawesome.com/da494c0433.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <section class="section-padding--sm">
+            <div class="container">
+                <div class="global-container">
+                    <h1 class="global-logo" title="Darin Livdahl"><a href="./index.html">DL</a></h1>
+                    <nav class="global-nav">
+                        <ul class="global-nav__list">
+                            <li class="global-nav__list-item"><a href="#experience">Experience</a></li>
+                            <li class="global-nav__list-item"><a href="#projects">Projects</a></li>
+                            <li class="global-nav__list-item"><a href="#about">About</a></li>
+                            <li class="global-nav__list-item"><a href="#connect">Connect</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav class="header-global__nav">
-                <ul>
-                    <li><a href="/">About Me</a></li>
-                    <li><a href="/">Resume</a></li>
-                    <li><a href="/">Pet Projects</a></li>
-                    <li><a href="/">Auggie</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <article>
-                <h1>Hello, my name is Darin.</h1>
-            </article>
-
-            <div class="past-work">
-                <!-- Marvin Windows -->
-                <!-- Bobcat.com -->
-                <!-- Caterpillar CloudPages -->
+        </section>
+    </header>
+    <main>
+        <!-- Hero Spot -->
+        <section id="hero" class="hero section-padding--lg">
+            <div class="container">
+                <h2>Hi, I'm Darin</h1>
+                <p class="subtitle">Web Developer and Designer</p>
+                <p><a class="btn btn-primary" href="#connect">Connect</a></p>
             </div>
-        </main>
-        <!-- <script src="" async defer></script> -->
-    </body>
+        </section>
+         <!-- Experience -->
+         <section id="experience" class="experience section-padding--md">
+            <div class="container">
+                <h2>Experience</h2>
+                <div class="flex-container">
+                    <div class="flex-container__item">
+                        <h3>Web Development</h3>
+                        <p>My journey into web development began way back in 1997 with <a href="https://en.wikipedia.org/wiki/Adobe_PageMill">Adobe PageMill</a> 2.0 consisting mostly of frames and image maps. It wasn't until I began looking "under the hood" at code that I acquired a deep interest. Since then I've logged countless hours devoted to custom coding, utilizing CSS frameworks and JavaScript libraries. My new passion is <a href="https://nodejs.org">Node.js</a> and <a href="https://react.dev">React</a>.</p>
+                    </div>
+                    <div class="flex-container__item">
+                        <h3>Web Design</h3>
+                        <p>For much of my career I've been fortunate to work with many skilled web designers to help build their creations for the web. On other occasions I have provided my own designs for both large and small websites on platforms such as WordPress and Salesforce. Lately, I utilize tools such as Adobe XD and <a href="https://www.figma.com/">Figma</a> for mockups, interactive wireframes and prototyping components.</p>
+                    </div>
+                    <div class="flex-container__item">
+                        <h3>Technical Consulting</h3>
+                        <p>The latter 5+ years of my career I've spent consulting clients who use the <a href="https://www.salesforce.com/">Salesforce</a> platform. This has entailed creating enterprise email marketing templates in Marketing Cloud and setting up partner community sites in Experience Cloud. Other activities include technical documentation, story refinement, Apex and <a href="https://developer.salesforce.com/developer-centers/lightning-web-components">Lightning Web Component</a> development.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 2rem;">More work experience details can be found on my <a href="https://www.linkedin.com/in/darinlivdahl/" target="_blank">LinkedIn profile</a>.</p>
+            </div>
+        </section>
+        <!-- My Projects -->
+        <!-- TODO: INCLUDE LINKS TO PUBLIC GITHUB REPOS -->
+        <section id="projects" class="projects section-padding--md">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="flex-container">
+                    <div class="flex-container__item">
+                        <h3>Comic Book Creators</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, lorem a rhoncus consequat, risus justo posuere massa, ac semper ex metus vitae urna. In justo enim, lobortis vitae tempus nec, lacinia et magna. Curabitur et ultrices magna. Sed luctus odio in ipsum porttitor, non porta tortor fringilla.</p>
+                        <p><a class="btn btn-primary" href="https://developer.marvel.com/" title="">Browse</a></p>
+                    </div>
+                    <div class="flex-container__item">
+                        <h3>NASA Data Explorer</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, lorem a rhoncus consequat, risus justo posuere massa, ac semper ex metus vitae urna. In justo enim, lobortis vitae tempus nec, lacinia et magna. Curabitur et ultrices magna. Sed luctus odio in ipsum porttitor, non porta tortor fringilla.</p>
+                        <p><a class="btn btn-primary" href="https://api.nasa.gov/" title="">Explore</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About -->
+        <section id="about" class="about section-padding--lg">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-grid__profile">
+                        <h2>About</h2>
+                        <img class="profile-photo" src="./images/fishing-hats.jpg" alt="profile photo">
+                        <p>
+                            When I'm not writing code or designing web apps I do have a few other loves that occupy the remainder of my time. From my adorable dog to hobbies such as downhill skiing, I appreciate and enjoy all of the following when offline.
+                        </p>
+                    </div>
+                    <div class="about-grid__auggie">
+                        <h3>Auggie</h3>
+                        <p>A few years back I adopted a friendly little 8-year-old <a href="https://www.petmd.com/dog/breeds/schnoodle" target="_blank">Schnoodle</a> named "Auggie" while fostering dogs for a local rescue group. He can be quite loud sometimes, but he is a great companion who keeps me active by insiting we go for long walks. Browse my <a href="#">curated gallery</a> of Auggie pics.</p>
+                    </div>
+                    <div class="about-grid__music">
+                        <h3>Music</h3>
+                        <p>At an early age I was drawn to drums from playing high school pep and jazz bands which eventually landed me the John Philip Sousa Award. Primarily a rock drummer, I enjoy listening to heavy metal to alternative rock bands like the Flaming Lips and the Red Hot Chili Peppers.</p>
+                    </div>
+                    <div class="about-grid__hobbies">
+                        <h3>Hobbies</h3>
+                        <p>Recently I've acquired an interest in fishing and in the summer I spend the weekends trying to catch elusive walleye. In the winter I travel west for downhill skiing with my family. When not outside I'm usually watching TV or playing RPG video games.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-bg-toggle"><a href="images/north-rocky-mountains.jpg">Northern Rocky Mountains (Photo by Darin Livdahl)</a></div>
+        </section>
+        <section id="connect" class="connect section-padding--md">
+            <div class="container">
+                <div class="connect-flex-container">
+                    <div class="content-a">
+                        <h2>Connect</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, lorem a rhoncus consequat, risus justo posuere massa, ac semper ex metus vitae urna. In justo enim, lobortis vitae tempus nec, lacinia et magna. Curabitur et ultrices magna. Sed luctus odio in ipsum porttitor, non porta tortor fringilla.</p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="https://github.com/darinlivdahl" target="_blank" class="social-icon__github" title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank" class="social-icon__salesforce" title="Salesforce">
+                                    <i class="fa-brands fa-salesforce"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://x.com/darinlivdahl" target="_blank" class="social-icon__x" title="X">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/darinlivdahl" target="_blank" class="social-icon__facebook" title="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/darinlivdahl/" target="_blank" class="social-icon__instagram" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-b">
+                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="darinlivdahl" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/darinlivdahl?trk=profile-badge">Darin Livdahl</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="section-padding--sm">
+            <div class="container">
+                <div class="flex-container">
+                    <p><small>&copy; 2024 Darin Livdahl. All rights reserved.</small></p>
+                    <p><small><a href="#header">Top of Page &uarr;</a></small></p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+</body>
 </html>
