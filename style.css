@@ -196,6 +196,12 @@ section > .container {
     color: black;
 }
 
+.experience-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
 /* projects section */
 .projects {
     background-color: #FFCF9D50;
@@ -238,6 +244,17 @@ section > .container {
     margin-bottom: 1rem;
 }
 
+.about-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.about-icon {
+    font-size: 32px;
+}
+
 .about-bg-toggle {
     display: none;
 }
@@ -265,7 +282,7 @@ section > .container {
 .connect-flex-container {
     display: flex;
     flex-direction: column;
-    align-items: top;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 80px;
 }
@@ -330,6 +347,11 @@ section > .container {
     display: none;
 }
 
+/* utility classes */
+.m-top__md {
+    margin-top: 1rem;
+}
+
 @media (min-width: 768px) {
 
     h2 {
@@ -343,11 +365,11 @@ section > .container {
     }
     
     p, ul, ol {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
 
     footer p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     section > .container {
@@ -377,9 +399,9 @@ section > .container {
     .global-nav__list {
         display: flex;
         flex-direction: row;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
-        gap: 30px;
+        gap: 10px;
         text-align: left;
     }
 
@@ -393,6 +415,16 @@ section > .container {
 
     .hero p {
         margin-bottom: 1.5rem;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+        gap: 30px;
+    }
+
+    .experience-consulting {
+        grid-column-start: span 2;
     }
 
     .flex-container {
@@ -450,6 +482,20 @@ section > .container {
 
     } */
 
+    .global-nav__list { 
+        gap: 30px;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 40px;
+    }
+
+    .experience-consulting {
+        grid-column-start: initial;
+    }
+
     .about {
         position: relative;
     }
@@ -466,12 +512,28 @@ section > .container {
         color: black;
     }
 
+    .about-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        column-gap: 20px;
+    }
+    
+    .about-icon {
+        font-size: 64px;
+    }
+
     .experience .flex-container__item {
         width: 33.3%;
     }
 
     .flex-container__item p:not(:last-child) {
         margin-bottom: 1.6rem;
+    }
+
+    /* utility classes */
+    .m-top__md {
+        margin-top: 2rem;
     }
 }
 
