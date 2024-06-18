@@ -14,20 +14,20 @@ h1, h2, h3, h4 {
 
 h2 {
     margin-bottom: 1rem;
-    font-size: 2.6rem;
+    font-size: 2.2rem;
     color: black;
     background-color: transparent;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: .6rem;
     color: #ffb000;
     background-color: transparent;
 }
 
 p, ul, ol {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 a {
@@ -46,7 +46,7 @@ footer a {
 }
 
 footer p {
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 body > header {
@@ -183,7 +183,7 @@ section > .container {
 
 /* hero spot section */
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 .hero p {
