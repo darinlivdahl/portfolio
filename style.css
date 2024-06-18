@@ -14,20 +14,20 @@ h1, h2, h3, h4 {
 
 h2 {
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-size: 2.6rem;
     color: black;
     background-color: transparent;
 }
 
 h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-bottom: .6rem;
     color: #ffb000;
     background-color: transparent;
 }
 
 p, ul, ol {
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 a {
@@ -46,7 +46,7 @@ footer a {
 }
 
 footer p {
-    font-size: .8rem;
+    font-size: 1.4rem;
 }
 
 body > header {
@@ -183,7 +183,7 @@ section > .container {
 
 /* hero spot section */
 .hero h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
 }
 
 .hero p {
@@ -317,7 +317,7 @@ section > .container {
 .social-icons a {
     display: inline-block;
     font-size: 32px;
-    color: #38434f;
+    color: white; /* #38434f */
     transition: color 400ms;
 }
 
@@ -489,7 +489,7 @@ section > .container {
     .experience-grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 40px;
+        gap: 60px;
     }
 
     .experience-consulting {
@@ -516,7 +516,7 @@ section > .container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
-        column-gap: 20px;
+        column-gap: 30px;
     }
     
     .about-icon {
