@@ -1,3 +1,21 @@
+/* BRAND COLORS
+
+Background colors:
+- Black
+- White
+- #ffb000 (Orange)
+
+Headings
+- #C78800 (Darker Orange)
+
+Link colors:
+- #a34343 (Rose)
+- #823535 (Darker Rose)
+
+
+*/
+
+
 /* Margin reset */
 * { margin: 0; }
 
@@ -22,7 +40,7 @@ h2 {
 h3 {
     font-size: 1.6rem;
     margin-bottom: .6rem;
-    color: #ffb000;
+    color: #C78800;
     background-color: transparent;
 }
 
@@ -33,6 +51,10 @@ p, ul, ol {
 a {
     color: #a34343;
     text-decoration: none;
+}
+
+.about a {
+    color: #823535; /* better contrast with background color */
 }
 
 a:hover,
@@ -61,16 +83,20 @@ section > .container {
     z-index: 1;
 }
 
+.skip-to-main {
+    display: none;
+}
+
 .section-padding--sm {
-    padding: 1rem 0;
+    padding: .8rem 0;
 }
 
 .section-padding--md {
-    padding: 2rem 0;
+    padding: 1.8rem 0;
 }
 
 .section-padding--lg {
-    padding: 4rem 0;
+    padding: 2.8rem 0;
 }
 
 .global-container {
@@ -279,13 +305,13 @@ section > .container {
     color: white;
 }
 
-.connect-flex-container {
+/* .connect-flex-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
     gap: 80px;
-}
+} */
 
 /* generic flex container */
 .flex-container {
@@ -319,6 +345,11 @@ section > .container {
     font-size: 32px;
     color: white; /* #38434f */
     transition: color 400ms;
+}
+
+.social-icon__linkedin:hover,
+.social-icon__linkedin:focus {
+    color: #0a66c2;
 }
 
 .social-icon__github:hover,
@@ -368,9 +399,9 @@ section > .container {
         font-size: 1.2rem;
     }
 
-    footer p {
+    /* footer p {
         font-size: 1rem;
-    }
+    } */
 
     section > .container {
         width: 85vw;
@@ -385,7 +416,7 @@ section > .container {
     }
     
     .section-padding--lg {
-        padding: 4rem 0;
+        padding: 3rem 0;
     }
 
     .global-container {
@@ -447,11 +478,11 @@ section > .container {
         margin-bottom: 0;
     }
 
-    .connect-flex-container {
+    /* .connect-flex-container {
         flex-direction: row;
         align-items: center;
         gap: 80px;
-    }
+    } */
 
     .social-icons a {
         font-size: 48px;
@@ -459,7 +490,7 @@ section > .container {
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     h2 {
         font-size: 3rem;
         margin-bottom: 3rem;
@@ -470,9 +501,9 @@ section > .container {
         margin-bottom: 1rem;
     }
     
-    p, ul, ol {
-        font-size: 1.4rem;
-    }
+    /* p, ul, ol {
+        font-size: 1.2rem;
+    } */
 
     footer p {
         font-size: 1.2rem;
@@ -481,6 +512,18 @@ section > .container {
     /* .hero h2 {
 
     } */
+
+    .section-padding--sm {
+        padding: 1.4rem 0;
+    }
+    
+    .section-padding--md {
+        padding: 2.4rem 0;
+    }
+    
+    .section-padding--lg {
+        padding: 3.4rem 0;
+    }
 
     .global-nav__list { 
         gap: 30px;
@@ -537,24 +580,7 @@ section > .container {
     }
 }
 
-@media (min-width: 1400px) {
-    h2 {
-        font-size: 4rem;
-        /* margin-bottom: 3rem; */
-    }
-    
-    h3 {
-        font-size: 2rem;
-        /* margin-bottom: 1rem; */
-    }
-    
-    p, ul, ol {
-        font-size: 1.4rem;
-    }
-
-    footer p {
-        font-size: 1.2rem;
-    }
+@media (min-width: 1280px) {
 
     section > .container {
         width: 75vw;
@@ -562,15 +588,15 @@ section > .container {
     }
 
     .section-padding--sm {
-        padding: 2rem 0;
+        padding: 3rem 0;
     }
     
     .section-padding--md {
-        padding: 8rem 0;
+        padding: 4rem 0;
     }
     
     .section-padding--lg {
-        padding: 12rem 0;
+        padding: 6rem 0;
     }
 
     .hero h2 {
@@ -583,5 +609,35 @@ section > .container {
 
     .flex-container__item p:not(:last-child) {
         margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 1536px) {
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    p, ul, ol {
+        font-size: 1.4rem;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    .section-padding--sm {
+        padding: 4rem 0;
+    }
+    
+    .section-padding--md {
+        padding: 5rem 0;
+    }
+    
+    .section-padding--lg {
+        padding: 8rem 0;
     }
 }

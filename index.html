@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#main" class="skip-to-main">Skip to main content</a>
     <header id="header">
         <section class="section-padding--sm">
             <div class="container">
@@ -60,7 +61,7 @@
         </section>
         <!-- My Projects -->
         <!-- TODO: INCLUDE LINKS TO PUBLIC GITHUB REPOS -->
-        <!-- <section id="projects" class="projects section-padding--md">
+        <section id="projects" class="projects section-padding--md">
             <div class="container">
                 <h2>Projects</h2>
                 <div class="flex-container">
@@ -76,7 +77,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- About -->
         <section id="about" class="about section-padding--lg">
             <div class="container">
@@ -91,7 +92,7 @@
                     <div class="about-grid__auggie">
                         <div class="about-flex">
                             <div class="about-flex__item">
-                                <i class="about-icon fa-solid fa-dog"></i>
+                                <span class="about-icon fa-solid fa-dog"></span>
                             </div>
                             <div class="about-flex__item">
                                 <h3>Auggie</h3>
@@ -102,7 +103,7 @@
                     <div class="about-grid__music">
                         <div class="about-flex">
                             <div class="about-flex__item">
-                                <i class="about-icon fa-solid fa-drum"></i>
+                                <span class="about-icon fa-solid fa-drum"></span>
                             </div>
                             <div class="about-flex__item">
                                 <h3>Music</h3>
@@ -113,7 +114,7 @@
                     <div class="about-grid__hobbies">
                         <div class="about-flex">
                             <div class="about-flex__item">
-                                <i class="about-icon fa-solid fa-person-skiing"></i>
+                                <span class="about-icon fa-solid fa-person-skiing"></span>
                             </div>
                             <div class="about-flex__item">
                                 <h3>Hobbies</h3>
@@ -127,43 +128,44 @@
         </section>
         <section id="connect" class="connect section-padding--md">
             <div class="container">
-                <div class="connect-flex-container">
-                    <div class="content-a">
-                        <h2>Connect</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar, lorem a rhoncus consequat, risus justo posuere massa, ac semper ex metus vitae urna. In justo enim, lobortis vitae tempus nec, lacinia et magna. Curabitur et ultrices magna. Sed luctus odio in ipsum porttitor, non porta tortor fringilla.</p>
-                        <ul class="social-icons">
-                            <li>
-                                <a href="https://github.com/darinlivdahl" target="_blank" class="social-icon__github" title="GitHub">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank" class="social-icon__salesforce" title="Salesforce">
-                                    <i class="fa-brands fa-salesforce"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/darinlivdahl" target="_blank" class="social-icon__x" title="X">
-                                    <i class="fa-brands fa-x-twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/darinlivdahl" target="_blank" class="social-icon__facebook" title="Facebook">
-                                    <i class="fa-brands fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/darinlivdahl/" target="_blank" class="social-icon__instagram" title="Instagram">
-                                    <i class="fa-brands fa-instagram"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="content-b">
-                        <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="darinlivdahl" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/darinlivdahl?trk=profile-badge">Darin Livdahl</a></div>
-                    </div>
-                </div>
+                <h2>Connect</h2>
+                <p>If you have any questions regarding my availability for work or just a new or old friend looking to connect online, please check out my social media profiles. I’ve been working hard to contribute more to my Github and Trailblazer accounts lately but there may be some fun Instagram pics of lake activity this summer.</p>
+                <ul class="social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/darinlivdahl" target="_blank" class="social-icon__linkedin" title="LinkedIn Profile" aria-labelledby="LinkedIn Profile">
+                            <span class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/darinlivdahl" target="_blank" class="social-icon__github" title="GitHub Profile" aria-labelledby="Github Profile">
+                            <span class="fa-brands fa-github"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank" class="social-icon__salesforce" title="Trailblazer Profile" aria-labelledby="Trailblazer Profile">
+                            <span class="fa-brands fa-salesforce"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/darinlivdahl" target="_blank" class="social-icon__x" title="X Profile" aria-labelledby="X Profile">
+                            <span class="fa-brands fa-x-twitter"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/darinlivdahl" target="_blank" class="social-icon__facebook" title="Facebook Profile" aria-labelledby="Facebook Profile">
+                            <span class="fa-brands fa-facebook"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/darinlivdahl/" target="_blank" class="social-icon__instagram"  title="Instagram Profile" aria-labelledby="Instagram Profile">
+                            <span class="fa-brands fa-instagram"></span>
+                        </a>
+                    </li>
+                </ul>
             </div>
+            <!-- <div class="content-b">
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="HORIZONTAL" data-vanity="darinlivdahl" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/darinlivdahl?trk=profile-badge">Darin Livdahl</a></div>
+            </div> -->
         </section>
     </main>
     <footer>
@@ -176,6 +178,6 @@
             </div>
         </section>
     </footer>
-    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+    <!-- <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script> -->
 </body>
 </html>
