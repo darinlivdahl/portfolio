@@ -11,10 +11,7 @@ Headings
 Link colors:
 - #a34343 (Rose)
 - #823535 (Darker Rose)
-
-
 */
-
 
 /* Margin reset */
 * { margin: 0; }
@@ -46,6 +43,10 @@ h3 {
 
 p, ul, ol {
     font-size: 1.2rem;
+}
+
+p a {
+    font-weight: 500;
 }
 
 a {
@@ -84,7 +85,14 @@ section > .container {
 }
 
 .skip-to-main {
-    display: none;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    display: inline-block;
+    font-size: .8rem;
+    color: black;
+    background-color: transparent;
+    font-weight: 500;
 }
 
 .section-padding--sm {
