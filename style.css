@@ -79,6 +79,7 @@ body > header {
     color: black;
 }
 
+div > .container,
 section > .container {
     position: relative;
     width: 90vw;
@@ -421,6 +422,7 @@ section > .container {
         font-size: 1rem;
     } */
 
+    div > .container,
     section > .container {
         width: 85vw;
     }
@@ -602,7 +604,8 @@ section > .container {
 }
 
 @media (min-width: 1280px) {
-
+    
+    div > .container,
     section > .container {
         width: 75vw;
         max-width: 1400px;
