@@ -47,6 +47,7 @@ p, ul, ol {
 
 a {
     color: #a34343;
+    transition: color 400ms;
 }
 
 .about a {
@@ -55,12 +56,18 @@ a {
 
 a:hover,
 a:focus {
+    color: black;
     text-decoration: underline;
 }
 
 footer a {
     color: white;
     background-color: transparent;
+}
+
+footer a:hover,
+footer a:focus {
+    color: white;
 }
 
 footer p {
@@ -86,12 +93,16 @@ section > .container {
 .skip-to-main {
     position: absolute;
     top: .5rem;
-    left: .5rem;
+    left: -9999px;
     display: inline-block;
     font-size: .8rem;
     color: black;
     background-color: transparent;
     font-weight: 500;
+}
+
+.skip-to-main:focus {
+    left: .5rem;
 }
 
 .section-padding--sm {
@@ -130,7 +141,7 @@ section > .container {
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
-    transition: color 200ms, background-color 200ms;
+    transition: color 400ms, background-color 400ms;
 
 }
 
@@ -147,10 +158,9 @@ section > .container {
 }
 
 .global-nav__list {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     padding: 0;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     list-style-type: none;
     gap: 10px;
     font-weight: 500;
@@ -164,7 +174,7 @@ section > .container {
     border: 2px solid black;
     padding: .5rem 1rem;
     text-decoration: none;
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 400ms, color 400ms;
 }
 
 .hero {
@@ -194,7 +204,7 @@ section > .container {
     display: inline-block;
     padding: .5rem 1rem;
     border-radius: 6px;
-    transition: background-color 200ms, color 200ms;
+    transition: background-color 400ms, color 400ms;
     font-weight: 500;
     text-decoration: none;
 }
@@ -436,11 +446,8 @@ section > .container {
     }
 
     .global-nav__list {
-        display: flex;
-        flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        gap: 10px;
         text-align: left;
     }
 
@@ -556,10 +563,16 @@ section > .container {
         position: absolute;
         right: 10px;
         bottom: 10px;
-        font-size: .8rem;
     }
 
     .about-bg-toggle a {
+        font-size: 16px;
+        color: #823535;
+        text-decoration: none;
+    }
+
+    .about-bg-toggle a:hover,
+    .about-bg-toggle a:focus {
         color: black;
     }
 
