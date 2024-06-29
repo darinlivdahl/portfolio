@@ -1,0 +1,279 @@
+/* BRAND COLORS
+
+Background colors:
+- Black
+- White
+- #ffb000 (Orange)
+
+Headings
+- #C78800 (Darker Orange)
+
+Link colors:
+- #a34343 (Rose)
+- #823535 (Darker Rose)
+*/
+
+h2 {
+    color: black;
+    background-color: transparent;
+}
+
+h3 {
+    color: #C78800;
+    background-color: transparent;
+}
+
+a {
+    color: #a34343;
+    transition: color 400ms;
+}
+
+.about a {
+    color: #823535; /* better contrast with background color */
+}
+
+a:hover,
+a:focus {
+    color: black;
+}
+
+footer a {
+    color: white;
+    background-color: transparent;
+}
+
+footer a:hover,
+footer a:focus {
+    color: white;
+}
+
+body > header {
+    background-color: #ffb000;
+    color: black;
+}
+
+.skip-to-main {
+    color: black;
+    background-color: transparent;
+}
+
+.global-logo a {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+    transition: color 400ms, background-color 400ms;
+}
+
+.global-logo a:hover,
+.global-logo a:focus,
+.global-nav__list-item a:hover,
+.global-nav__list-item a:focus {
+    color: #ffb000;
+    background-color: black;
+}
+
+.global-nav__toggle {
+    background-color: transparent;
+    border-color: black;
+}
+
+.global-nav__toggle--active {
+    background-color: black;
+    color: #ffb000;
+}
+
+.global-nav__list-item a {
+    color: black;
+    background-color: #ffb000;
+    transition: background-color 400ms, color 400ms;
+    border-color: black;
+}
+
+@media screen and (max-width: 767px) {
+    .global-nav__list-item a {
+        color: white;
+        background-color: #a34343;
+        border-color: #a34343;
+    }
+}
+
+/* button styles */
+.btn {
+    transition: background-color 400ms, color 400ms;
+}
+
+.btn-primary {
+    background-color: #a34343;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #ffb000;
+    color: black;
+}
+
+/* experience section */
+.experience {
+    background-color: white;
+    color: black;
+}
+
+/* projects section */
+.projects {
+    background-color: #FFCF9D50;
+    color: black;
+}
+
+/* about section */
+.about {
+    color: black;
+    background-color: #ffb000;
+}
+
+.about h3 {
+    color: black;
+}
+
+/* connect section */
+.hero, .connect, body > footer {
+    background-color: black;
+    color: white;
+}
+
+.hero h2, .connect h2 {
+    color: white;
+}
+
+/* social network icons and links */
+.social-icons a {
+    color: white; /* #38434f */
+    transition: color 400ms;
+}
+
+.social-icon__linkedin:hover,
+.social-icon__linkedin:focus {
+    color: #0a66c2;
+}
+
+.social-icon__github:hover,
+.social-icon__github:focus,
+.social-icon__x:hover,
+.social-icon__x:focus {
+    color: white;
+}
+
+.social-icon__salesforce:hover,
+.social-icon__salesforce:focus {
+    color: #1F5FBF;
+}
+
+.social-icon__facebook:hover,
+.social-icon__facebook:focus {
+    color: #0866ff;
+}
+
+.social-icon__instagram:hover,
+.social-icon__instagram:focus {
+    color: #C13584;
+}
+
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        color: #666;
+        background-color: transparent;
+    }
+
+    body > header {
+        background-color: #000000;
+        color: white;
+    }
+
+    a {
+        color: rgb(0,150,255);
+    }
+
+    a:hover,
+    a:focus {
+        color: rgb(117,213,255);
+    }
+    
+    .btn-primary {
+        background-color: rgb(0,150,255);
+        color: white;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        background-color: rgb(1,24,255);
+        color: white;
+    }
+
+    .about a {
+        color: rgb(83,146,255); /* better contrast with background color */
+    }
+
+    .about a:hover,
+    .about a:focus {
+        color: rgb(117,213,255);
+    }
+
+    .global-logo a {
+        color: white;
+        border-color: white;
+    }
+
+    .global-logo a:hover,
+    .global-logo a:focus,
+    .global-nav__list-item a:hover,
+    .global-nav__list-item a:focus {
+        color: black;
+        background-color: white;
+    }
+
+    .global-nav__toggle {
+        color: white;
+        border-color: white;
+    }
+
+    .global-nav__toggle--active {
+        color: black;
+        background-color: white;
+    }
+
+    .global-nav__list-item a {
+        color: white;
+        background-color: black;
+    }
+
+    @media screen and (max-width: 767px) {
+        .global-nav__list-item a {
+            background-color: rgb(0,150,255);
+            border-color: rgb(0,150,255);
+        }
+    }
+
+    .experience {
+        background-color: black;
+        color: white;
+    }
+
+    .projects {
+        background-color: #333;
+        color: white;
+    }
+
+    /* about section */
+    .about {
+        color: white;
+        background-color: black;
+    }
+
+    .about h3 {
+        color: white;
+    }
+}

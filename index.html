@@ -6,10 +6,8 @@
     <title>Darin Livdahl</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <script src="https://kit.fontawesome.com/da494c0433.js" crossorigin="anonymous"></script>
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link href="./assets/css/layout.css" rel="stylesheet">
+    <link href="./assets/css/theme-default/style.css" rel="stylesheet">
 </head>
 <body>
     <header id="header">
@@ -19,11 +17,13 @@
                 <div class="global-container">
                     <h1 class="global-logo" title="Darin Livdahl"><a href="./index.html">DL</a></h1>
                     <nav class="global-nav">
-                        <ul class="global-nav__list">
+                        <button id="global-nav-toggle" class="global-nav__toggle" type="button"><span class="fa-solid fa-bars"></span></button>
+                        <ul id="global-nav-list" class="global-nav__list">
                             <li class="global-nav__list-item"><a href="#experience">Experience</a></li>
                             <!-- <li class="global-nav__list-item"><a href="#projects">Projects</a></li> -->
                             <li class="global-nav__list-item"><a href="#about">About</a></li>
                             <li class="global-nav__list-item"><a href="#connect">Connect</a></li>
+                            <!-- <li class="global-nav__list-item"><a href="#settings" aria-label="Settings" title="Settings"><span class="fa-solid fa-gear"></span></a></li> -->
                         </ul>
                     </nav>
                 </div>
@@ -36,7 +36,7 @@
             <div class="container">
                 <h2>Hi, I&rsquo;m Darin</h2>
                 <p class="subtitle">Web Developer and Designer</p>
-                <p><a class="btn btn-primary" href="#connect">Connect</a></p>
+                <p><a class="btn btn-primary skip-to" href="#connect">Connect</a></p>
             </div>
         </section>
          <!-- Experience -->
@@ -68,7 +68,7 @@
                 <div class="about-grid">
                     <div class="about-grid__profile">
                         <h2>About</h2>
-                        <img class="profile-photo" src="./images/fishing-hats.jpg" alt="profile photo">
+                        <img class="profile-photo" src="./assets/images/fishing-hats.jpg" alt="profile photo">
                         <p>
                             When I&rsquo;m not writing code or designing web apps I do have a few other loves that occupy the remainder of my time. From my adorable dog to hobbies such as downhill skiing, I appreciate and enjoy all of the following when offline.
                         </p>
@@ -108,7 +108,6 @@
                     </div>
                 </div>
             </div>
-            <div class="about-bg-toggle"><a href="images/north-rocky-mountains.jpg" class="fa-solid fa-image" title="Northern Rocky Mountains (Photo by Darin Livdahl)"></a></div>
         </section>
         <section id="connect" class="connect section-padding--md">
             <div class="container">
@@ -159,6 +158,6 @@
             </div>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

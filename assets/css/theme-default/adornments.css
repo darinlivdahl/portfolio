@@ -1,0 +1,89 @@
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.skip-to {
+    text-decoration: none;
+}
+
+.global-logo a {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    text-decoration: none;
+}
+
+.global-nav__toggle {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.global-nav__list {
+    list-style-type: none;
+}
+
+.global-nav__list-item a {
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: -3px 5px 8px black;
+    text-decoration: none;
+}
+
+.hero:before {
+    opacity: 0.2;
+    background-image: url(./images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+/* button styles */
+.btn {
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+}
+
+.about:before {
+    opacity: 0.08;
+    background-image: url(./images/north-rocky-mountains.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply; /* hard-light, multiply */
+}
+
+.profile-photo {
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    border: 5px solid black;
+}
+
+/* social network icons and links */
+.social-icons {
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    .global-nav__list-item a {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .profile-photo {
+        border-color: white;
+    }
+    .about:before {
+        opacity: .1;
+    }
+}
