@@ -8,10 +8,10 @@ a:focus {
 }
 
 .global-logo a {
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 5px;
     text-decoration: none;
+    background-image: url(./images/bitmoji-darinlivdahl.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
 }
 
 .global-nav__toggle {
@@ -76,6 +76,18 @@ a:focus {
     .global-nav__list-item a {
         border: none;
         box-shadow: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .global-logo a {
+        background-size: 80px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .global-logo a {
+        background-size: 100px;
     }
 }
 
