@@ -183,7 +183,7 @@ section > .container {
     white-space: nowrap;
     border-width: 0;
     */
-    visibility: hidden;
+    text-indent: -9999em;
 }
 
 .profile-photo {
