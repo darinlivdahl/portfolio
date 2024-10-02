@@ -173,7 +173,7 @@ section > .container {
 } */
 
 .sr-only {
-    /* position: absolute;
+    position: absolute;
     width: 1px;
     height: 1px;
     padding: 0;
@@ -182,8 +182,6 @@ section > .container {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
-    */
-    text-indent: -9999em;
 }
 
 .profile-photo {
