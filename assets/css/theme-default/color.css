@@ -232,9 +232,17 @@ body > header {
         border-color: white;
     }
 
+    .global-nav__toggle .fa-bars {
+        color: white;
+    }
+
     .global-nav__toggle--active {
         color: black;
         background-color: white;
+    }
+
+    .global-nav__toggle--active .fa-bars {
+        color: black;
     }
 
     .global-nav__list-item a {
