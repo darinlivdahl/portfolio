@@ -132,7 +132,7 @@ section > .container {
 .experience-grid {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* projects section */
@@ -212,7 +212,7 @@ section > .container {
     flex-direction: column;
     width: 100%;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 
 footer .flex-container {
@@ -233,8 +233,8 @@ footer .flex-container {
 }
 
 .social-icons li {
-    margin-right: .5rem;
-    margin-left: .5rem;
+    margin-right: .6rem;
+    margin-left: .6rem;
 }
 
 .social-icons a {
@@ -303,7 +303,7 @@ footer .flex-container {
     .experience-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
-        gap: 30px;
+        gap: 40px;
     }
 
     .experience-consulting {

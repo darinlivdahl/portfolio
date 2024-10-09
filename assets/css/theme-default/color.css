@@ -68,8 +68,16 @@ body > header {
     border-color: black;
 }
 
+.global-nav__toggle .fa-bars {
+    color: black;
+}
+
 .global-nav__toggle--active {
     background-color: black;
+    color: #ffb000;
+}
+
+.global-nav__toggle--active .fa-bars {
     color: #ffb000;
 }
 
