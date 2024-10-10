@@ -36,7 +36,7 @@ a:focus {
     opacity: 0.2;
     background-image: url(./images/kenny.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: -50px;
     background-size: cover;
     background-blend-mode: screen;
 }
@@ -77,11 +77,19 @@ a:focus {
         border: none;
         box-shadow: none;
     }
+
+    .hero:before {
+        background-position: center;
+    }
 }
 
 @media (min-width: 1280px) {
     .global-logo a {
         background-size: 80px;
+    }
+
+    .hero:before {
+       background-position: center;
     }
 }
 
