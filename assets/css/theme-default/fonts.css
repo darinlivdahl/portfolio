@@ -27,6 +27,8 @@ footer p {
     font-size: 1rem;
 }
 
+a { text-decoration: none; }
+
 .skip-to-main {
     font-size: .8rem;
     font-weight: 500;
