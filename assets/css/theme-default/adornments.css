@@ -34,9 +34,9 @@ a:focus {
 
 .hero:before {
     opacity: 0.2;
-    background-image: url(./images/hero-background.jpg);
+    background-image: url(./images/kenny.png);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-blend-mode: screen;
 }
