@@ -185,7 +185,7 @@ section > .container {
 .project-thumb {
     display: block;
     margin: 1.2rem auto;
-    max-width: 220px;
+    max-width: 260px;
 }
 
 .project-thumb-img {
