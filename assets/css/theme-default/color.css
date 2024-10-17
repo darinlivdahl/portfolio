@@ -35,7 +35,8 @@ a {
 
 a:hover,
 a:focus {
-    color: black;
+    /* color: black; */
+    color: #C78800;
 }
 
 footer a {
