@@ -18,7 +18,8 @@ h2 {
     background-color: transparent;
 }
 
-h3 {
+h3,
+.exp-icon {
     color: #C78800;
     background-color: transparent;
 }
@@ -112,6 +113,11 @@ body > header {
     color: black;
 }
 
+.btn-disabled {
+    background-color: silver;
+    color: gray;
+}
+
 /* experience section */
 .experience {
     background-color: white;
@@ -177,12 +183,33 @@ body > header {
     color: #C13584;
 }
 
+/* Projects */
+.project-thumb--disabled .project-thumb-img {
+    border-color: gray;
+}
+
+.project-thumb-img {
+    border-color: #a34343;
+}
+
+.project-thumb:focus:not(.project-thumb--disabled) .project-thumb-img,
+.project-thumb:hover:not(.project-thumb--disabled) .project-thumb-img {
+    border-color: #C78800;
+}
+
+/* Utility */
+
+.para-footer {
+    border-color: silver;
+}
+
 @media (prefers-color-scheme: dark) {
     h2 {
         color: white;
     }
 
-    h3 {
+    h3,
+    .exp-icon {
         color: #666;
         background-color: transparent;
     }
@@ -210,6 +237,10 @@ body > header {
     .btn-primary:focus {
         background-color: rgb(1,24,255);
         color: white;
+    }
+
+    .projects h3 {
+        color: silver;
     }
 
     .about a {
@@ -267,6 +298,15 @@ body > header {
         color: white;
     }
 
+    .project-thumb-img {
+        border-color: rgb(0,150,255);
+    }
+
+    .project-thumb:hover:not(.project-thumb--disabled) .project-thumb-img,
+    .project-thumb:focus:not(.project-thumb--disabled) .project-thumb-img {
+        border-color: rgb(1,24,255);
+    }
+
     /* about section */
     .about {
         color: white;
@@ -275,5 +315,11 @@ body > header {
 
     .about h3 {
         color: white;
+    }
+
+    /* Utility */
+
+    .para-footer {
+        border-color: #333;
     }
 }

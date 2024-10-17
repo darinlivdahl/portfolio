@@ -53,14 +53,21 @@ a { text-decoration: none; }
 }
 
 /* about section */
+.exp-icon,
 .about-icon {
-    font-size: 48px;
+    font-size: 36px;
 }
 
 /* social network icons and links */
 
 .social-icons a {
     font-size: 38px;
+}
+
+/* Utility */
+
+.para-footer {
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -72,14 +79,6 @@ a { text-decoration: none; }
     h3 {
         font-size: 1.6rem;
     }
-    
-    p, ul, ol {
-        font-size: 1.2rem;
-    }
-
-    /* footer p {
-        font-size: 1rem;
-    } */
 
     .hero h2 {
         font-size: 3rem;
@@ -99,23 +98,37 @@ a { text-decoration: none; }
     h3 {
         font-size: 1.8rem;
     }
-    
-    /* p, ul, ol {
-        font-size: 1.2rem;
-    } */
 
     footer p {
         font-size: 1.2rem;
     }
     
+    .exp-icon,
     .about-icon {
-        font-size: 64px;
+        font-size: 48px;
+    }
+
+    .para-footer {
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 1280px) {
     .hero h2 {
         font-size: 5rem;
+    }
+
+    p, ul, ol {
+        font-size: 1.3rem;
+    }
+
+    footer p {
+        font-size: 1.1rem;
+    }
+
+    .exp-icon,
+    .about-icon {
+        font-size: 64px;
     }
 }
 

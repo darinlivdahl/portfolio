@@ -33,10 +33,10 @@ a:focus {
 }
 
 .hero:before {
-    opacity: 0.2;
-    background-image: url(./images/kenny.png);
+    opacity: 0.5;
+    background-image: url(./images/hero.jpg);
     background-repeat: no-repeat;
-    background-position: -50px;
+    background-position: center;
     background-size: cover;
     background-blend-mode: screen;
 }
@@ -72,24 +72,33 @@ a:focus {
     list-style-type: none;
 }
 
+.para-footer {
+    border-top-width: 1px;
+    border-top-style: solid;
+}
+
+/* Projects */
+.project-thumb-img {
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.btn-disabled,
+.project-thumb--disabled {
+    pointer-events: none;
+}
+
 @media (min-width: 768px) {
     .global-nav__list-item a {
         border: none;
         box-shadow: none;
-    }
-
-    .hero:before {
-        background-position: center;
     }
 }
 
 @media (min-width: 1280px) {
     .global-logo a {
         background-size: 80px;
-    }
-
-    .hero:before {
-       background-position: center;
     }
 }
 

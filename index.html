@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Darin Livdahl</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/da494c0433.js" crossorigin="anonymous"></script>
     <link href="./assets/css/layout.css" rel="stylesheet">
     <link href="./assets/css/theme-default/style.css" rel="stylesheet">
@@ -45,19 +48,23 @@
                 <h2>Experience</h2>
                 <div class="experience-grid">
                     <div class="experience-development">
+                        <span class="exp-icon fa-solid fa-code"></span>
                         <h3>Web Developer</h3>
-                        <p>My journey into web development started back in 1997 with Adobe PageMill 2.0, a tool I focused mostly on frames and image maps—far from ideal, I know! However, it wasn&rsquo;t until I began exploring the underlying code that my real passion for development emerged. Since then, I&rsquo;ve spent countless hours honing my skills, working extensively with CSS frameworks and JavaScript libraries.
+                        <p>My journey into web development started back in 1997 with Adobe PageMill 2.0, a tool I focused mostly on frames and image maps—far from ideal, I know! However, it wasn&rsquo;t until I began exploring the underlying code that my real passion for development emerged. Since then, I&rsquo;ve spent countless hours <a href="https://github.com/darinlivdahl" target="_blank">honing my skills</a>, working extensively with CSS frameworks and JavaScript libraries.
                     </div>
                     <div class="experience-design">
+                        <span class="exp-icon fa-solid fa-object-group"></span>
                         <h3>UX Designer</h3>
-                        <p>Throughout my career, I&rsquo;ve had the privilege of collaborating with talented web designers to bring their visions to life on the web. At other times, I&rsquo;ve created my own designs for both large and small websites, working on platforms like WordPress and Salesforce. Recently, I&rsquo;ve been using tools like Adobe XD and <a href="https://www.figma.com/">Figma</a> to create mockups, interactive wireframes, and prototypes, refining the user experience and design process.</p>
+                        <!--Todo: Include link to public Figma prototype when available. -->
+                        <p>Throughout my career, I&rsquo;ve had the privilege of collaborating with talented web designers to bring their visions to life on the web. At other times, I&rsquo;ve created my own designs for both large and small websites, working on platforms like WordPress and Salesforce. Recently, I&rsquo;ve been using tools like Adobe XD and Figma to create mockups, interactive wireframes, and prototypes, refining the user experience and design process.</p>
                     </div>
                     <div class="experience-consulting">
+                        <span class="exp-icon fa-solid fa-ear-listen"></span>
                         <h3>Technical Consultant</h3>
-                        <p>In the past 5+ years of my career, I&rsquo;ve focused on consulting for clients using the <a href="https://www.salesforce.com/">Salesforce</a> platform. This work has included creating enterprise-level email marketing templates in Marketing Cloud and setting up partner community sites in Experience Cloud. I&rsquo;ve also been involved in technical documentation, refining user stories, and developing with Apex and <a href="https://developer.salesforce.com/developer-centers/lightning-web-components">Lightning Web Components</a>.</p>
+                        <p>In the past 5+ years of my career, I&rsquo;ve focused on consulting for clients <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank">trailblazing</a> on the Salesforce platform. This work has included creating enterprise-level email marketing templates in Marketing Cloud and setting up partner community sites in Experience Cloud. I&rsquo;ve also been involved in technical documentation, refining user stories, and developing with Apex and Lightning Web Components.</p>
                     </div>
                 </div>
-                <p class="m-top__md">More work experience details can be found on my <a href="https://www.linkedin.com/in/darinlivdahl/" target="_blank">LinkedIn profile</a>.</p>
+                <p class="para-footer">More work experience details can be found on my <a href="https://www.linkedin.com/in/darinlivdahl/" target="_blank">LinkedIn profile</a>.</p>
             </div>
         </section>
         <!-- My Projects -->
@@ -67,16 +74,23 @@
                 <div class="flex-container">
                     <div class="flex-container__item">
                         <h3>Explore Mars</h3>
+                        <a href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb" title="Explore Mars photos"><img src="./assets/images/project-explore-mars.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
                         <p>A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fascinating way to explore the surface of Mars.</p>
-                        <p><a class="btn btn-primary" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Explore Mars photos">Explore</a></p>
+                        <p>
+                            <a class="btn btn-primary" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Explore Mars photos">Explore</a>&nbsp;
+                            <a class="btn btn-primary" href="https://github.com/darinlivdahl/mars-photos" title="Project on GitHub"><span class="fa-brands fa-github"></span></a>
+                        </p>
                     </div>
                     <div class="flex-container__item">
                         <h3>Silver Age Marvel</h3>
-                        <p>This is a project still in the planning stages that I hope to use as a basis for studying React and the <a href="https://developer.marvel.com/">Marvel API</a>. The initial idea is to be able to browse my favorite silver age comic book artists and their cover art. More to come.</p>
-                        <!-- <p><a class="btn btn-primary" href="https://developer.marvel.com/" title="">Browse</a></p> -->
+                        <a href="#" class="project-thumb project-thumb--disabled" title="Browse Silver Age Marvel"><img src="./assets/images/project-construction.jpg" class="project-thumb-img" alt="Silver Age Marvel website screenshot"></a>
+                        <p>This is a project still in the planning stages that I hope to use as a basis for studying React and the <a href="https://developer.marvel.com/" target="_blank">Marvel API</a>. The initial idea is to be able to browse my favorite silver age comic book artists and their cover art. More to come.</p>
+                        <p>
+                            <a class="btn btn-disabled" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Browse Silver Age Marvel">Browse</a>&nbsp;
+                            <a class="btn btn-disabled" href="#" title="Project on GitHub"><span class="fa-brands fa-github"></span></a>
+                        </p>
                     </div>
                 </div>
-                <p class="m-top__md">Source code for my projects can be found on <a href="https://github.com/darinlivdahl">GitHub</a>.</p>
             </div>
         </section>
         <!-- About -->
@@ -97,7 +111,7 @@
                             </div>
                             <div class="about-flex__item">
                                 <h3 class="sr-only" aria-label="Auggie">Auggie</h3>
-                                <p>A few years back I adopted a friendly little 8-year-old <a href="https://www.petmd.com/dog/breeds/schnoodle" target="_blank">Schnoodle</a> named <em>Auggie</em> while fostering dogs for a local rescue group. He can be quite loud sometimes, but he is a great companion who keeps me active by insiting we go for long walks. <!-- Browse my <a href="https://www.instagram.com/darinlivdahl/" aria-label="Auggie pics on my Instagram">curated gallery</a> of Auggie pics.</p> -->
+                                <p>A few years back I adopted a friendly little 8-year-old Schnoodle named <em>Auggie</em> while fostering dogs for a <a href="https://www.4luvofdog.org/" target="_blank">local rescue group</a>. He can be quite loud sometimes, but he is a great companion who keeps me active by insiting we go for long walks. He is an amazing creature.
                             </div>
                         </div>
                     </div>
