@@ -35,8 +35,12 @@ a {
 
 a:hover,
 a:focus {
-    /* color: black; */
     color: #C78800;
+}
+
+.about a:hover,
+.about a:focus {
+    color: black;
 }
 
 footer a {
