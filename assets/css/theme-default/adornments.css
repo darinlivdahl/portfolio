@@ -45,6 +45,8 @@ a:focus {
 .btn {
     border-radius: 6px;
     text-decoration: none;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .btn:hover,

@@ -104,17 +104,25 @@ body > header {
 
 /* button styles */
 .btn {
-    transition: background-color 400ms, color 400ms;
+    transition: background-color 400ms, color 400ms, border-color 400ms;
 }
 
 .btn-primary {
     background-color: #a34343;
     color: white;
+    border-color: #a34343;
+}
+
+.btn-primary--outline {
+    background-color: transparent;
+    border: 2px solid #a34343;
+    color: #a34343;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: #ffb000;
+    border-color: #ffb000;
     color: black;
 }
 
@@ -235,12 +243,20 @@ body > header {
     
     .btn-primary {
         background-color: rgb(0,150,255);
+        border-color: rgb(0,150,255);
         color: white;
+    }
+
+    .btn-primary--outline {
+        background-color: #666;
+        color: white;
+        border-color: #666;
     }
 
     .btn-primary:hover,
     .btn-primary:focus {
         background-color: rgb(1,24,255);
+        border-color: rgb(1,24,255);
         color: white;
     }
 
