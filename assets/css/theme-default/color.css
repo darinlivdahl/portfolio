@@ -139,8 +139,21 @@ body > header {
 
 /* projects section */
 .projects {
-    background-color: #FFCF9D50;
     color: black;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,176,0,0.5) 50%, rgba(255,207,157,0.5) 100%);
+}
+
+.projects_container__item-inner {
+    background-color: black;
+}
+
+.projects_container__item-inner h3 {
+    color: white;
+}
+
+.projects_container__item-inner p {
+    color: white;
 }
 
 /* about section */
@@ -261,7 +274,7 @@ body > header {
     }
 
     .projects h3 {
-        color: silver;
+        color: #666;
     }
 
     .about a {
@@ -315,7 +328,8 @@ body > header {
     }
 
     .projects {
-        background-color: #333;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(102,102,102,1) 50%, rgba(51,51,51,1) 100%);
         color: white;
     }
 

@@ -80,10 +80,9 @@ a:focus {
 }
 
 /* Projects */
-.project-thumb-img {
-    border-radius: 20px;
-    border-width: 4px;
-    border-style: solid;
+.projects_container__item-inner {
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
 }
 
 .btn-disabled,
