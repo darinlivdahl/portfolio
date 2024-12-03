@@ -18,7 +18,9 @@ p {
 }
 
 header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 2;
 }
 
@@ -104,6 +106,7 @@ section > .container {
 
 .hero {
     position: relative;
+    margin-top: 86px;
 }
 
 .hero:before {
@@ -303,6 +306,10 @@ section > .container {
         width: 85vw;
     }
 
+    header {
+        position: relative;
+    }
+
     .section-padding--sm {
         padding: 1rem 0;
     }
@@ -332,6 +339,10 @@ section > .container {
         align-items: center;
         text-align: left;
         gap: 10px;
+    }
+
+    .hero {
+        margin-top: 0;
     }
 
     .hero p {
