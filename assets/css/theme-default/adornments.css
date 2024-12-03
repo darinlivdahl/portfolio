@@ -41,6 +41,10 @@ a:focus {
     background-blend-mode: normal;
 }
 
+.hero h2 {
+    text-shadow: 2px 2px 8px black;
+}
+
 /* button styles */
 .btn {
     border-radius: 6px;
