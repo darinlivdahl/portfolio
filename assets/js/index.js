@@ -13,9 +13,16 @@ function scrollToAnchor(els) {
             event.preventDefault();
             // Get link href value for section anchor
             const thisHref = event.target.getAttribute("href");
-            let anchor = document.querySelector(thisHref);
+            const anchor = document.querySelector(thisHref);
+            const bodyRect = document.body.getBoundingClientRect();
+            const anchorRect = anchor.getBoundingClientRect();
+            const offset = anchorRect.top - bodyRect.top;
             // Animate scroll to section
-            anchor.scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+                top: offset,
+                left: 0,
+                behavior: "smooth"
+            });
         });
     }
 }
