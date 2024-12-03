@@ -33,12 +33,12 @@ a:focus {
 }
 
 .hero:before {
-    opacity: 0.5;
-    background-image: url(./images/hero.jpg);
+    opacity: 0.6;
+    background-image: url(./images/hero-snow.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: screen;
+    background-blend-mode: normal;
 }
 
 /* button styles */
