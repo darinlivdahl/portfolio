@@ -85,12 +85,13 @@
         <!-- My Projects -->
         <section id="projects" class="projects section-padding--md">
             <div class="container">
+                <!--TODO: Add schema meta data type markup -->
                 <h2>Projects</h2>
                 <div class="projects-container">
                     <div class="projects-container__item">
                         <div class="projects_container__item-inner">
                             <h3>Explore Mars</h3>
-                            <a href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb" title="Explore Mars photos"><img src="./assets/images/project-explore-mars.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
+                            <a href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb project-thumb--mars" title="Explore Mars photos"><img src="./assets/images/project-explore-mars-bg.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
                             <p>A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fascinating way to explore the surface of Mars.</p>
                             <div class="btn-container btn-container--project">
                                 <a class="btn btn-primary" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Explore Mars photos">Explore</a>&nbsp;
@@ -101,7 +102,7 @@
                     <div class="projects-container__item">
                         <div class="projects_container__item-inner">
                             <h3>Study Notes</h3>
-                            <a href="#" class="project-thumb project-thumb--disabled" title="Browse Study Notes"><img src="./assets/images/project-study-notes.jpg" class="project-thumb-img" alt="Study Notes website screenshot"></a>
+                            <a href="#" class="project-thumb project-thumb--disabled" title=""><img src="./assets/images/project-study-notes-bg.jpg" class="project-thumb-img" alt="Study Notes website screenshot"></a>
                             <p>A <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/40325688#overview">Udemy course project</a> inspired me to build a study notes web application I&rsquo;d envisioned throughout the course challenges. Developed using Node.js, ExpressJS, PostgreSQL, and prototyped with Bootstrap, it fulfills a long-held personal learning goal.</p>
                             <div class="btn-container btn-container--project">
                                 <!-- <a class="btn btn-disabled" href="#" title="Study Notes">Study</a>&nbsp; -->
@@ -152,7 +153,7 @@
                             </div>
                             <div class="about-flex__item">
                                 <h3 class="sr-only" aria-label="Hobbies">Hobbies</h3>
-                                <p>Recently I&rsquo;ve acquired an interest in fishing and in the summer I spend the weekends trying to catch elusive walleye. In the winter I travel west for downhill skiing with my family. When not outside I&rsquo;m usually watching TV or playing RPG video games.</p>
+                                <p>Recently I&rsquo;ve acquired an interest in fishing and in the summer I spend the weekends trying to catch elusive walleye. In the winter I travel west for downhill skiing with my family. When not outside I&rsquo;m watching a movie, looking at comic book art or playing RPG video games.</p>
                             </div>
                         </div>
                     </div>
@@ -175,13 +176,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank" class="social-icon__salesforce" title="Trailblazer Profile" aria-label="Trailblazer Profile">
-                            <span class="fa-brands fa-salesforce"></span>
+                        <a href="https://codepen.io/darinlivdahl" target="_blank" class="social-icon__codepen" title="CodePen Profile" aria-label="CodePen Profile">
+                            <span class="fa-brands fa-codepen"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/darinlivdahl" target="_blank" class="social-icon__facebook" title="Facebook Profile" aria-label="Facebook Profile">
-                            <span class="fa-brands fa-facebook"></span>
+                        <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank" class="social-icon__salesforce" title="Trailblazer Profile" aria-label="Trailblazer Profile">
+                            <span class="fa-brands fa-salesforce"></span>
                         </a>
                     </li>
                     <li>
@@ -203,7 +204,6 @@
             </div>
         </div>
     </footer>
-    <script src="./assets/js/index.js"></script>
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",
@@ -214,5 +214,6 @@
           "url": "https://darinlivdahl.co"
         }
     </script>
+    <script src="./assets/js/index.js"></script>
 </body>
 </html>

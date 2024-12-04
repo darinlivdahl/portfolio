@@ -1,3 +1,7 @@
+header {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+}
+
 a:hover,
 a:focus {
     text-decoration: underline;
@@ -34,7 +38,7 @@ a:focus {
 
 .hero:before {
     opacity: 0.6;
-    background-image: url(./images/hero-snow.jpg);
+    background-image: url(./images/hero-snow-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,6 +47,10 @@ a:focus {
 
 .hero h2 {
     text-shadow: 2px 2px 8px black;
+}
+
+.hero .btn {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 
 /* button styles */

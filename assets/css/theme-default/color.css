@@ -188,20 +188,18 @@ body > header {
 }
 
 .social-icon__github:hover,
-.social-icon__github:focus,
-.social-icon__x:hover,
-.social-icon__x:focus {
-    color: white;
+.social-icon__github:focus {
+    color: lightgray;
+}
+
+.social-icon__codepen:hover,
+.social-icon__codepen:focus {
+    color: rgb(255, 221, 64);
 }
 
 .social-icon__salesforce:hover,
 .social-icon__salesforce:focus {
     color: #1F5FBF;
-}
-
-.social-icon__facebook:hover,
-.social-icon__facebook:focus {
-    color: #0866ff;
 }
 
 .social-icon__instagram:hover,
@@ -210,17 +208,16 @@ body > header {
 }
 
 /* Projects */
+.project-thumb--mars {
+    background-color: salmon;
+}
+
+.project-thumb--mars .project-thumb-img {
+    filter: opacity(0.7);
+}
+
 .project-thumb--disabled .project-thumb-img {
     border-color: gray;
-}
-
-.project-thumb-img {
-    border-color: #a34343;
-}
-
-.project-thumb:focus:not(.project-thumb--disabled) .project-thumb-img,
-.project-thumb:hover:not(.project-thumb--disabled) .project-thumb-img {
-    border-color: #C78800;
 }
 
 /* Utility */
@@ -333,15 +330,6 @@ body > header {
         color: white;
     }
 
-    .project-thumb-img {
-        border-color: rgb(0,150,255);
-    }
-
-    .project-thumb:hover:not(.project-thumb--disabled) .project-thumb-img,
-    .project-thumb:focus:not(.project-thumb--disabled) .project-thumb-img {
-        border-color: rgb(1,24,255);
-    }
-
     /* about section */
     .about {
         color: white;
@@ -353,7 +341,6 @@ body > header {
     }
 
     /* Utility */
-
     .para-footer {
         border-color: #333;
     }

@@ -127,7 +127,7 @@ section > .container {
 }
 
 /* hero spot section */
-.hero p {
+.hero .subtitle {
     margin-bottom: 1rem;
 }
 
@@ -345,7 +345,7 @@ section > .container {
         margin-top: 0;
     }
 
-    .hero p {
+    .hero .subtitle {
         margin-bottom: 1.5rem;
     }
 
