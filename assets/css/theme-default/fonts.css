@@ -38,10 +38,6 @@ p a {
     font-weight: 500;
 }
 
-.global-nav__toggle > span {
-    font-size: 24px;
-}
-
 .global-nav__list {
     font-weight: 500;
 }
@@ -49,6 +45,11 @@ p a {
 /* button styles */
 .btn {
     font-weight: 500;
+}
+
+.btn-bare {
+    font-size: 28px;
+    font-weight: 600;
 }
 
 /* hero spot section */

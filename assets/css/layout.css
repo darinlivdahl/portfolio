@@ -78,15 +78,11 @@ section > .container {
     position: relative;
 }
 
-.global-nav__toggle {
-    padding: 6px;
-}
-
 .global-nav__list {
     display: none;
     position: absolute;
-    left: -112px;
-    top: 50px;
+    left: -122px;
+    top: 40px;
     width: 150px;
     padding: 0;
 }
@@ -103,6 +99,10 @@ section > .container {
     display: block;
     padding: .5rem 1rem;
 }
+
+/* .global-settings {
+
+} */
 
 .hero {
     position: relative;
@@ -124,6 +124,12 @@ section > .container {
 .btn {
     display: inline-block;
     padding: .5rem 1rem;
+}
+
+.btn-bare {
+    padding: 0;
+    width: 28px;
+    height: 28px;
 }
 
 /* hero spot section */

@@ -18,11 +18,11 @@ a:focus {
     background-repeat: no-repeat;
 }
 
-.global-nav__toggle {
+/* .global-nav__toggle {
     border-radius: 6px;
     border-style: solid;
     border-width: 2px;
-}
+} */
 
 .global-nav__list {
     list-style-type: none;
@@ -59,6 +59,12 @@ a:focus {
     text-decoration: none;
     border-style: solid;
     border-width: 3px;
+}
+
+.btn-bare {
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
 }
 
 .btn:hover,

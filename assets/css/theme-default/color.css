@@ -69,22 +69,17 @@ body > header {
     background-color: black;
 }
 
-.global-nav__toggle {
-    background-color: transparent;
-    border-color: black;
-}
-
 .global-nav__toggle .fa-bars {
     color: black;
 }
 
-.global-nav__toggle--active {
+/* .global-nav__toggle--active {
     background-color: black;
     color: #ffb000;
-}
+} */
 
 .global-nav__toggle--active .fa-bars {
-    color: #ffb000;
+    color: #a34343;
 }
 
 .global-nav__list-item a {
@@ -105,6 +100,10 @@ body > header {
 /* button styles */
 .btn {
     transition: background-color 400ms, color 400ms, border-color 400ms;
+}
+
+.btn-bare {
+    background-color: transparent;
 }
 
 .btn-primary {
@@ -289,22 +288,17 @@ body > header {
         background-color: white;
     }
 
-    .global-nav__toggle {
+    /* .global-nav__toggle {
         color: white;
         border-color: white;
-    }
+    } */
 
     .global-nav__toggle .fa-bars {
         color: white;
     }
 
-    .global-nav__toggle--active {
-        color: black;
-        background-color: white;
-    }
-
     .global-nav__toggle--active .fa-bars {
-        color: black;
+        color: white;
     }
 
     .global-nav__list-item a {
