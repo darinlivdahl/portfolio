@@ -87,28 +87,27 @@
         <!-- My Projects -->
         <section id="projects" class="projects section-padding--md">
             <div class="container">
-                <!--TODO: Add schema meta data type markup -->
                 <h2>Projects</h2>
                 <div class="projects-container">
-                    <div class="projects-container__item">
+                    <div class="projects-container__item" itemscope itemtype="https://schema.org/Project">
                         <div class="projects_container__item-inner">
-                            <h3>Explore Mars</h3>
-                            <a href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb project-thumb--mars" title="Explore Mars photos"><img src="./assets/images/project-explore-mars-bg.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
-                            <p>A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fascinating way to explore the surface of Mars.</p>
+                            <h3 itemprop="name">Explore Mars</h3>
+                            <a itemprop="url" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb project-thumb--mars" title="Explore Mars photos"><img itemprop="image" src="./assets/images/project-explore-mars-bg.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
+                            <p itemprop="description">A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fascinating way to explore the surface of Mars.</p>
                             <div class="btn-container btn-container--project">
                                 <a class="btn btn-primary" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Explore Mars photos">Explore</a>&nbsp;
-                                <a class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/mars-photos" title="Explore Mars Project on GitHub"><span class="fa-brands fa-github"></span></a>
+                                <a itemprop="mainEntityOfPage" class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/mars-photos" title="Explore Mars Project on GitHub"><span class="fa-brands fa-github"></span></a>
                             </div>
                         </div>
                     </div>
-                    <div class="projects-container__item">
+                    <div class="projects-container__item" itemscope itemtype="https://schema.org/Project">
                         <div class="projects_container__item-inner">
-                            <h3>Study Notes</h3>
-                            <a href="#" class="project-thumb project-thumb--disabled" title=""><img src="./assets/images/project-study-notes-bg.jpg" class="project-thumb-img" alt="Study Notes website screenshot"></a>
-                            <p>A <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/40325688#overview">Udemy course project</a> inspired me to build a study notes web application I&rsquo;d envisioned throughout the course challenges. Developed using Node.js, ExpressJS, PostgreSQL, and prototyped with Bootstrap, it fulfills a long-held personal learning goal.</p>
+                            <h3 itemprop="name">Study Notes</h3>
+                            <a href="#" class="project-thumb project-thumb--disabled" title=""><img itemprop="image" src="./assets/images/project-study-notes-bg.jpg" class="project-thumb-img" alt="Study Notes website screenshot"></a>
+                            <p itemprop="description">A <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/40325688#overview">Udemy course project</a> inspired me to build a study notes web application I&rsquo;d envisioned throughout the course challenges. Developed using Node.js, ExpressJS, PostgreSQL, and prototyped with Bootstrap, it fulfills a long-held personal learning goal.</p>
                             <div class="btn-container btn-container--project">
                                 <!-- <a class="btn btn-disabled" href="#" title="Study Notes">Study</a>&nbsp; -->
-                                <a class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/study-notes" title="Study Notes on GitHub"><span class="fa-brands fa-github"></span></a>
+                                <a itemprop="mainEntityOfPage" class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/study-notes" title="Study Notes on GitHub"><span class="fa-brands fa-github"></span></a>
                             </div>
                         </div>
                     </div>
