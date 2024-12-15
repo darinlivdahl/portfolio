@@ -59,6 +59,7 @@ a:focus {
     text-decoration: none;
     border-style: solid;
     border-width: 3px;
+    cursor: pointer;
 }
 
 .btn-bare {
@@ -107,6 +108,39 @@ a:focus {
 .project-thumb--disabled {
     pointer-events: none;
 }
+
+/* Begin Modal */
+.modal-heading {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.modal-footer {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.settings-container ul {
+    list-style: none;
+}
+
+.settings-menu__list-item a {
+    pointer-events: none;
+}
+
+.settings-panel {
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+
+.settings-panel__list-label {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 6px;
+}
+/* End Modal */
 
 @media (min-width: 768px) {
     .global-nav__list-item a {

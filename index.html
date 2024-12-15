@@ -27,7 +27,7 @@
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/da494c0433.js" crossorigin="anonymous"></script>
     <link href="./assets/css/layout.css" rel="stylesheet">
-    <link href="./assets/css/theme-default/style.css" rel="stylesheet">
+    <link id="theme-style" href="./assets/css/theme-default/style.css" rel="stylesheet">
 </head>
 <body id="body">
     <header id="header">
@@ -45,7 +45,7 @@
                             <li class="global-nav__list-item"><a href="#connect">Connect</a></li>
                         </ul>
                     </nav>
-                    <!-- <button type="button" class="global-settings btn btn-bare" title="Settings"><span class="fa-solid fa-gear"></span></button> -->
+                    <button id="btn-settings" type="button" class="global-settings btn btn-bare" title="Settings"><span class="fa-solid fa-gear"></span></button>
                 </div>
             </div>
         </section>
@@ -205,6 +205,44 @@
             </div>
         </div>
     </footer>
+    <!-- Begin settings modal -->
+    <div id="modal-settings" class="modal modal--closed" role="alertdialog" aria-modal="false" aria-labelledby="dialog-label">
+        <div class="modal-inner">
+            <div class="modal-heading">
+                <h1 id="dialog-label">Settings</h1>
+                <button id="btn-modal-close" type="button" name="closeModal" class="btn btn-bare"><span class="fa-solid fa-close"></span></button>
+            </div>
+            <div class="modal-body">
+                <div class="settings-container">
+                    <div class="settings-menu">
+                        <ul class="settings-menu__list">
+                            <li class="settings-menu__list-item"><a href="#">Theme</a></li>
+                        </ul>
+                    </div>
+                    <div class="settings-panel">
+                        <ul class="settings-panel__list">
+                            <li class="settings-panel__list-item">
+                                <label class="settings-panel__list-label settings-panel__list-label--active"><input type="radio" name="theme" value="default" checked /> Default</label>
+                            </li>
+                            <li class="settings-panel__list-item">
+                                <label class="settings-panel__list-label"><input type="radio" name="theme" value="fancy" /> Fancy</label>
+                            </li>
+                            <!-- <li>
+                                <label><input type="radio" name="theme" value="professional" /> Professional</label>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="btn-container btn-container--modal">
+                    <button id="btn-modal-cancel" type="button" class="btn btn-secondary">Cancel</button>
+                    <button id="btn-modal-settings-save" type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End settings modal window -->
     <script type="application/ld+json">
         {
           "@context": "https://schema.org",

@@ -69,16 +69,7 @@ body > header {
     background-color: black;
 }
 
-.global-nav__toggle .fa-bars {
-    color: black;
-}
-
-/* .global-nav__toggle--active {
-    background-color: black;
-    color: #ffb000;
-} */
-
-.global-nav__toggle--active .fa-bars {
+.btn-bare.global-nav__toggle--active {
     color: #a34343;
 }
 
@@ -102,14 +93,23 @@ body > header {
     transition: background-color 400ms, color 400ms, border-color 400ms;
 }
 
-.btn-bare {
-    background-color: transparent;
-}
-
 .btn-primary {
     background-color: #a34343;
     color: white;
     border-color: #a34343;
+}
+
+.btn-secondary {
+    background-color: #ccc;
+    color: black;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: black;
+    color: white;
+    border-color: black;
 }
 
 .btn-primary--outline {
@@ -123,6 +123,11 @@ body > header {
     background-color: #ffb000;
     border-color: #ffb000;
     color: black;
+}
+
+.btn-bare {
+    color: black;
+    background-color: transparent;
 }
 
 .btn-disabled {
@@ -225,6 +230,44 @@ body > header {
     border-color: silver;
 }
 
+/* Begin Modal */
+.modal {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-heading {
+    color: black;
+    background-color: #ffb000;
+}
+
+.modal-body {
+    color: black;
+    background-color: white;
+}
+
+.modal-footer {
+    color: black;
+    background-color: #ebebeb;
+    border-top-color: #ccc;
+}
+
+.settings-menu__list-item a {
+    color: black;
+}
+
+.settings-panel {
+    border-left-color: #ccc;
+}
+
+.settings-panel__list-label--active {
+    border-color: #a34343;
+}
+
+.settings-panel__list-item input:checked {
+    accent-color: #a34343;
+}
+/* End Modal */
+
 @media (prefers-color-scheme: dark) {
     h2 {
         color: white;
@@ -269,6 +312,19 @@ body > header {
         color: white;
     }
 
+    .btn-secondary {
+        background-color: #666;
+        border-color: #666;
+    }
+    
+    .btn-bare {
+        color: white;
+    }
+
+    .btn-bare.global-nav__toggle--active {
+        color: rgb(0,150,255);
+    }
+
     .projects h3 {
         color: #666;
     }
@@ -288,16 +344,7 @@ body > header {
         background-color: white;
     }
 
-    /* .global-nav__toggle {
-        color: white;
-        border-color: white;
-    } */
-
-    .global-nav__toggle .fa-bars {
-        color: white;
-    }
-
-    .global-nav__toggle--active .fa-bars {
+    .global-nav__toggle--active {
         color: white;
     }
 
@@ -338,4 +385,34 @@ body > header {
     .para-footer {
         border-color: #333;
     }
+
+    /* Begin Modal */
+    .modal-heading {
+        color: white;
+        background-color: #333;
+    }
+
+    .modal-body {
+        color: white;
+        background-color: black;
+    }
+
+    .modal-footer {
+        color: white;
+        background-color: #333;
+        border-color: #1d1c1c;
+    }
+
+    .settings-menu__list-item a {
+        color: white;
+    }
+
+    .settings-panel__list-label--active {
+        border-color: rgb(0,150,255);
+    }
+    
+    .settings-panel__list-item input:checked {
+        accent-color: rgb(0,150,255);
+    }
+    /* End Modal */
 }

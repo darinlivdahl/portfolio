@@ -19,7 +19,7 @@ h3 {
     font-size: 1.6rem;
 }
 
-p, ul, ol, .btn-container {
+p, ul, ol, .btn:not(.btn-bare) {
     font-size: 1.2rem;
 }
 
@@ -79,6 +79,24 @@ p a {
     font-size: 1rem;
 }
 
+/* Begin Modal */
+.modal-heading h1 {
+    font-size: 1.6rem;
+}
+
+.modal-footer .btn {
+    font-size: 1rem;
+}
+
+.settings-menu__list-item a {
+    font-weight: 600;
+}
+
+.settings-panel__list-label {
+    font-size: 1em;
+}
+/* End Modal */
+
 @media (min-width: 768px) {
 
     h2 {
@@ -120,6 +138,12 @@ p a {
     .para-footer {
         font-size: 1.2rem;
     }
+
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 1.8rem;
+    }
+    /* End Modal */
 }
 
 @media (min-width: 1280px) {
@@ -127,7 +151,7 @@ p a {
         font-size: 5rem;
     }
 
-    p, ul, ol, .btn-container {
+    p, ul, ol, .btn:not(.btn-bare) {
         font-size: 1.3rem;
     }
 
@@ -139,6 +163,16 @@ p a {
     .about-icon {
         font-size: 64px;
     }
+    
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 2rem;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.1rem;
+    }
+    /* End Modal */
 }
 
 @media (min-width: 1536px) {
@@ -150,11 +184,21 @@ p a {
         font-size: 2rem;
     }
     
-    p, ul, ol, .btn-container {
+    p, ul, ol, .btn:not(.btn-bare) {
         font-size: 1.4rem;
     }
 
     .footer-container__item {
         font-size: 1.2rem;
     }
+
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.2rem;
+    }
+    /* End Modal */
 }

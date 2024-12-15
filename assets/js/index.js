@@ -56,3 +56,90 @@ globalNavToggle.addEventListener("click", function() {
     }
 });
 /* End global navigation mobile toggle */
+
+/* Begin settings modal */
+const btnSettings = document.querySelector("#btn-settings");
+const modalSettings = document.querySelector("#modal-settings");
+const btnModalClose = document.querySelector("#btn-modal-close");
+const btnModalCancel = document.querySelector("#btn-modal-cancel");
+const btnModalSettingsSave = document.querySelector("#btn-modal-settings-save");
+const themeStyleSheet = document.querySelector("#theme-style");
+const themeOptions = document.getElementsByName("theme");
+let modalSettingsOpen = false;
+let savedTheme = "default";
+
+function closeModal() {
+    modalSettings.classList.replace('modal--opened','modal--closed');
+    modalSettings.setAttribute('aria-modal',false);
+    modalSettingsOpen = false;
+}
+
+function openModal() {
+    modalSettings.classList.replace('modal--closed','modal--opened');
+    modalSettings.setAttribute('aria-modal',true);
+    modalSettingsOpen = true;
+}
+
+function getNewStyleSheetPath(theme) {
+    return './assets/css/theme-' + theme + '/style.css';
+}
+
+function updateTheme() {
+    themeOptions.forEach(r => {
+        if (r.checked) {
+            themeStyleSheet.setAttribute('href', getNewStyleSheetPath(r.value));
+            localStorage.setItem('theme', r.value);
+            savedTheme = r.value;
+        }
+    });
+    closeModal();
+}
+
+// Modal event listeners
+btnSettings.addEventListener("click", openModal);
+btnModalClose.addEventListener("click", closeModal);
+btnModalCancel.addEventListener("click", closeModal);
+btnModalSettingsSave.addEventListener("click", updateTheme);
+
+// Update theme option style on select
+themeOptions.forEach(option => {
+    option.addEventListener("click", function(e) {
+        // Remove active state on all options
+        themeOptions.forEach(o => {
+            o.parentElement.classList.remove('settings-panel__list-label--active');
+        });
+        // Set active state on selected item
+        e.target.parentElement.classList.add('settings-panel__list-label--active');
+    });
+});
+
+// Close modal window on escape key
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && modalSettingsOpen) {
+        closeModal();
+    }
+});
+
+(function() {
+    // Get theme from localStorage if exists
+    const localStorageTheme = localStorage.getItem("theme");
+    if (localStorageTheme !== null) {
+        themeStyleSheet.setAttribute('href', getNewStyleSheetPath(localStorageTheme));
+        savedTheme = localStorageTheme;
+    }
+    // Set checked theme in modal on document ready
+    themeOptions.forEach(opt => {
+        opt.checked = (opt.value === savedTheme) ? true : false;
+    });
+
+    // Lazy load theme stylesheets
+    const themeArr = ['fancy','professional'];
+    themeArr.forEach(t => {
+        var cssLink = document.createElement('link');
+        cssLink.href = './assets/css/theme-' + t + '/style.css';
+        cssLink.rel = 'stylesheet';
+        cssLink.type = 'text/css';
+        document.getElementsByTagName('head')[0].appendChild(cssLink);
+    });
+})();
+/* End settings modal */
