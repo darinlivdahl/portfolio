@@ -259,10 +259,6 @@ body > header {
     border-left-color: #ccc;
 }
 
-.settings-panel__list-label--active {
-    border-color: #a34343;
-}
-
 .settings-panel__list-item input:checked {
     accent-color: #a34343;
 }

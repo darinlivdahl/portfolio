@@ -199,11 +199,6 @@ main > section {
     border-left-color: #c7921e;
 }
 
-.settings-panel__list-label--active {
-    border-color: #c7921e;
-    background-color: #faf2df;
-}
-
 .settings-panel__list-item input:checked {
     accent-color: #c7921e;
 }

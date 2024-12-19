@@ -129,11 +129,6 @@ a:focus {
     border-left-width: 1px;
     border-left-style: dotted;
 }
-
-.settings-panel__list-label {
-    border-width: 1px;
-    border-style: dotted;
-}
 /* End Modal */
 
 @media (max-width: 767px) {

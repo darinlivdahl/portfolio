@@ -80,6 +80,22 @@ section > .container {
     order: 2;
 }
 
+.global-container .btn-bare {
+    min-width: 28px;
+}
+
+.global-nav__toggle .fa-close {
+    display: none;
+}
+
+.global-nav__toggle--active .fa-close {
+    display: block;
+}
+
+.global-nav__toggle--active .fa-bars {
+    display: none;
+}
+
 .global-nav__list {
     display: none;
     position: absolute;
@@ -130,8 +146,6 @@ section > .container {
 
 .btn-bare {
     padding: 0;
-    width: 28px;
-    height: 28px;
 }
 
 /* hero spot section */
@@ -372,7 +386,7 @@ section > .container {
 
 .settings-panel__list-label {
     display: flex;
-    padding: .4rem .6rem;
+    align-items: center;
 }
 
 .settings-panel__list-item input {
@@ -427,7 +441,7 @@ section > .container {
 
     .global-settings {
         order: 2;
-        margin-left: 10px;
+        margin-left: 26px;
         margin-bottom: 4px;
     }
 
@@ -536,7 +550,7 @@ section > .container {
     }
 
     .global-settings {
-        margin-left: 30px;
+        margin-left: 46px;
     }
 
     .experience-grid,
@@ -628,7 +642,7 @@ section > .container {
     }
 
     .global-settings {
-        margin-left: 40px;
+        margin-left: 56px;
     }
 
     /*! Temporaily hidden for next project */
@@ -692,7 +706,7 @@ section > .container {
     }
 
     .global-settings {
-        margin-left: 50px;
+        margin-left: 66px;
     }
 
     .projects_container__item-inner h3 {

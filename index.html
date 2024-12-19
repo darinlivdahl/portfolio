@@ -39,7 +39,10 @@
                 <div class="global-container">
                     <h1 class="global-logo"><a href="./index.html" title="Go to Homepage">Darin Livdahl</a></h1>
                     <nav class="global-nav">
-                        <button id="global-nav-toggle" class="global-nav__toggle btn-bare" type="button"><span class="fa-solid fa-bars"></span></button>
+                        <button id="global-nav-toggle" class="global-nav__toggle btn-bare" type="button">
+                            <span class="fa-solid fa-bars"></span>
+                            <span class="fa-solid fa-close"></span>
+                        </button>
                         <ul id="global-nav-list" class="global-nav__list">
                             <li class="global-nav__list-item"><a href="#experience">Experience</a></li>
                             <li class="global-nav__list-item"><a href="#projects">Projects</a></li>
@@ -201,7 +204,10 @@
         <div class="section-padding--sm">
             <div class="container">
                 <div class="footer-container">
-                    <div class="footer-container__item"><small>&copy; 2024 Darin Livdahl. All rights reserved.</small></div>
+                    <div class="footer-container__item"><small>&copy;
+                        <script type="text/javascript">
+                            document.write(new Date().getFullYear());
+                        </script> Darin Livdahl. All rights reserved.</small></div>
                     <div class="footer-container__item"><small><a class="skip-to" href="#body">Top of Page &uarr;</a></small></div>
                 </div>
             </div>

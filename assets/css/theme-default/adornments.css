@@ -129,11 +129,6 @@ a:focus {
     border-left-style: solid;
 }
 
-.settings-panel__list-label {
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 6px;
-}
 /* End Modal */
 
 @media (min-width: 768px) {
