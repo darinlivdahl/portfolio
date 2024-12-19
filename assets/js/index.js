@@ -90,11 +90,20 @@ function updateTheme() {
             themeStyleSheet.setAttribute('href', getNewStyleSheetPath(r.value));
             localStorage.setItem('theme', r.value);
             savedTheme = r.value;
+            updateThemeColor(savedTheme);
         }
     });
     closeModal();
 }
 
+function updateThemeColor(theme) {
+    var themeColorLightEl = document.getElementById('theme-color-light');
+    if (theme === 'fancy') {
+        themeColorLightEl.setAttribute('content','#faf9f6');
+    } else {
+        themeColorLightEl.setAttribute('content','#ffb000');
+    }
+}
 // Modal event listeners
 btnSettings.addEventListener("click", openModal);
 btnModalClose.addEventListener("click", closeModal);
@@ -126,6 +135,7 @@ document.addEventListener('keydown', function(event) {
     if (localStorageTheme !== null) {
         themeStyleSheet.setAttribute('href', getNewStyleSheetPath(localStorageTheme));
         savedTheme = localStorageTheme;
+        updateThemeColor(savedTheme);
     }
     // Set checked theme in settings modal on document ready
     themeOptions.forEach(opt => {
