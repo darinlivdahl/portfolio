@@ -1,0 +1,431 @@
+h2 {
+    color: black;
+    background-color: transparent;
+}
+
+h3,
+.exp-icon,
+.about-icon,
+.global-settings:hover,
+.global-settings:focus {
+    color: #c7921e;
+    background-color: transparent;
+}
+
+a {
+    color: #000;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+body > header,
+.hero {
+    border-bottom-color: #c7921e;
+}
+
+body > header,
+body > footer,
+main > section {
+    background-color: #faf9f6;
+    color: black;
+}
+
+.skip-to-main {
+    color: black;
+    background-color: transparent;
+}
+
+.btn-bare.global-nav__toggle--active {
+    color: #c7921e;
+}
+
+.global-nav__list-item a {
+    color: black;
+    background-color: transparent;
+    transition: color 400ms;
+    border-color: #c7921e;
+}
+
+@media screen and (max-width: 767px) {
+    .global-nav__list-item a {
+        color: black;
+        background-color: #faf2df;
+    }
+    .global-nav__list-item a:hover,
+    .global-nav__list-item a:focus {
+        color: #c7921e;
+        border-color: black;
+    }
+}
+
+/* button styles */
+.btn {
+    transition: background-color 400ms, color 400ms, border-color 400ms;
+    border-color: #c7921e;
+}
+
+.btn-primary {
+    background-color: #faf2df;
+    color: black;
+}
+
+.btn-secondary {
+    background-color: #ebebeb;
+    color: black;
+    border-color: #ccc;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+    background-color: #faf2df;
+    color: #c7921e;
+    border-color: #c7921e;
+}
+
+.btn-primary--outline {
+    background-color: white;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #c7921e;
+    border-color: black;
+}
+
+.btn-bare {
+    color: black;
+    background-color: transparent;
+}
+
+.btn-disabled {
+    background-color: silver;
+    color: gray;
+}
+
+/* Hero section */
+.hero, .about {
+    border-top-color: #c7921e;
+    border-bottom-color: #c7921e;
+}
+
+/* about section */
+.profile-photo {
+    border-color: #c7921e;
+}
+
+/* connect section */
+
+/* social network icons and links */
+.social-icons a {
+    color: black;
+    transition: color 400ms;
+}
+
+.social-icon__linkedin:hover,
+.social-icon__linkedin:focus {
+    color: #0a66c2;
+}
+
+.social-icon__github:hover,
+.social-icon__github:focus {
+    color: #c7921e;
+}
+
+.social-icon__codepen:hover,
+.social-icon__codepen:focus {
+    color: rgb(255, 221, 64);
+}
+
+.social-icon__salesforce:hover,
+.social-icon__salesforce:focus {
+    color: #1F5FBF;
+}
+
+.social-icon__instagram:hover,
+.social-icon__instagram:focus {
+    color: #C13584;
+}
+
+/* Projects */
+.project-thumb {
+    border-top-color: #c7921e;
+    border-bottom-color: #c7921e;
+}
+
+.project-thumb:hover,
+.project-thumb:focus {
+    border-top-color: black;
+    border-bottom-color: black;
+}
+
+.project-thumb--mars {
+    background-color: #c7921e;
+}
+
+.project-thumb--mars .project-thumb-img {
+    filter: opacity(0.7);
+}
+
+/* Begin Modal */
+.modal {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-inner {
+    border-color: #333;
+}
+
+.modal-heading {
+    border-bottom-color: #c7921e;
+}
+
+.modal-heading, .modal-body, .modal-footer {
+    color: black;
+    background-color: #faf9f6;
+}
+
+.modal-footer {
+    border-top-color: #c7921e;
+}
+
+.settings-menu__list-item a {
+    color: black;
+}
+
+.settings-panel {
+    border-left-color: #c7921e;
+}
+
+.settings-panel__list-label--active {
+    border-color: #c7921e;
+    background-color: #faf2df;
+}
+
+.settings-panel__list-item input:checked {
+    accent-color: #c7921e;
+}
+/* End Modal */
+
+@media screen and (min-width: 768px) {
+    .global-nav__list-item a,
+    .global-nav__list-item a {
+        border-bottom-color: transparent;
+    }
+
+    .global-nav__list-item a:hover,
+    .global-nav__list-item a:focus {
+        border-bottom-color: #c7921e;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    h2 {
+        color: white;
+    }
+
+    h3,
+    .exp-icon,
+    .about-icon {
+        color: #666;
+        background-color: transparent;
+    }
+
+    body > header,
+    .hero {
+        border-bottom-color: #333;
+    }
+
+    body > header,
+    body > footer,
+    main > section {
+        background-color: black;
+        color: white;
+    }
+
+    a {
+        color: rgb(117,213,255);
+    }
+
+    footer a {
+        color: white;
+    }
+
+    a:hover,
+    a:focus {
+        color: rgb(0,150,255);
+    }
+
+    /* Global nav */
+    .global-nav__list-item a:hover,
+    .global-nav__list-item a:focus {
+        border-color: #ccc;
+    }
+
+    .global-nav__toggle--active {
+        color: white;
+    }
+
+    .global-nav__list-item a {
+        color: white;
+        background-color: black;
+    }
+
+    .global-settings:hover,
+    .global-settings:focus {
+        color: rgb(117,213,255);
+        background-color: transparent;
+    }
+
+    .global-settings:active {
+        color: rgb(0,150,255);
+    }
+    
+    /* Buttons */
+    .btn-primary {
+        background-color: #333;
+        border-color: rgb(117,213,255);
+        color: rgb(117,213,255);
+    }
+
+    .btn-primary--outline {
+        background-color: transparent;
+        color: rgb(117,213,255);
+        border-color: #666;
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus {
+        border-color: rgb(0,150,255);
+        color: rgb(0,150,255);
+    }
+
+    .btn-secondary {
+        background-color: transparent;
+        color: #666;
+        border-color: #666;
+    }
+    
+    .btn-secondary:hover,
+    .btn-secondary:focus {
+        background-color: transparent;
+        color: rgb(0,150,255);
+        border-color: rgb(0,150,255);
+    }
+    
+    .btn-bare {
+        color: white;
+    }
+
+    .btn-bare.global-nav__toggle--active {
+        color: rgb(117,213,255);
+    }
+
+    /* Projects */
+    .project-thumb {
+        border-top-color: rgb(117,213,255);
+        border-bottom-color: rgb(117,213,255);
+    }
+
+    .project-thumb:hover,
+    .project-thumb:focus {
+        border-top-color: rgb(0,150,255);
+        border-bottom-color: rgb(0,150,255);
+    }
+
+    .project-thumb--mars {
+        background-color: #333;
+    }
+
+    /* About section */
+    .hero, .about {
+        border-top-color: #333;
+        border-bottom-color: #333;
+    }
+
+    .profile-photo {
+        border-color: #333;
+    }
+
+    @media screen and (max-width: 767px) {
+        .global-nav__list-item a {
+            background-color: #333;
+            color: rgb(117,213,255);
+            border-color: rgb(117,213,255);
+        }
+        .global-nav__list-item a:hover,
+        .global-nav__list-item a:focus {
+            color: rgb(0,150,255);
+            border-color: rgb(0,150,255);
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .global-nav__list-item a,
+        .global-nav__list-item a {
+            border-bottom-color: transparent;
+        }
+    
+        .global-nav__list-item a:hover,
+        .global-nav__list-item a:focus {
+            border-bottom-color: rgb(117,213,255);
+        }
+    }
+
+    .experience, .projects, .about {
+        background-color: black;
+        color: white;
+    }
+
+    /* social network icons and links */
+    .social-icons a {
+        color: white;
+    }
+
+    .social-icon__github:hover,
+    .social-icon__github:focus {
+        color: #666;
+    }
+
+    /* Begin Modal */
+    .modal-heading {
+        color: white;
+        background-color: #333;
+        border-bottom-color: #333;
+    }
+
+    .modal-body {
+        color: white;
+        background-color: black;
+    }
+
+    .modal-footer {
+        color: white;
+        background-color: #333;
+        border-top-color: #333;
+    }
+
+    .settings-panel {
+        border-left-color: #333;
+    }
+
+    .settings-menu__list-item a {
+        color: white;
+    }
+    
+    .settings-panel__list-label {
+        border-color: #333;
+    }
+
+    .settings-panel__list-label--active {
+        border-color: rgb(0,150,255);
+        background-color: #333;
+    }
+    
+    .settings-panel__list-item input:checked {
+        accent-color: rgb(0,150,255);
+    }
+    /* End Modal */
+}

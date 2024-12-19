@@ -127,18 +127,23 @@ document.addEventListener('keydown', function(event) {
         themeStyleSheet.setAttribute('href', getNewStyleSheetPath(localStorageTheme));
         savedTheme = localStorageTheme;
     }
-    // Set checked theme in modal on document ready
+    // Set checked theme in settings modal on document ready
     themeOptions.forEach(opt => {
-        opt.checked = (opt.value === savedTheme) ? true : false;
+        if (opt.value === savedTheme) {
+            opt.checked = true;
+            opt.parentElement.classList.add('settings-panel__list-label--active');
+        } else {
+            opt.checked = false;
+            opt.parentElement.classList.remove('settings-panel__list-label--active');
+        }
     });
-
     // Lazy load theme stylesheets
-    const themeArr = ['fancy','professional'];
+    const themeArr = ['fancy'];
     themeArr.forEach(t => {
         var cssLink = document.createElement('link');
         cssLink.href = './assets/css/theme-' + t + '/style.css';
-        cssLink.rel = 'stylesheet';
-        cssLink.type = 'text/css';
+        cssLink.rel = 'preload';
+        cssLink.as = 'style';
         document.getElementsByTagName('head')[0].appendChild(cssLink);
     });
 })();

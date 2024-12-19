@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dosis:wght@200..800&display=swap');
+
+body {
+    font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p, ul, ol, .btn:not(.btn-bare) {
+    font-size: 1.2rem;
+}
+
+.footer-container__item {
+    font-size: 1rem;
+}
+
+a { text-decoration: none; }
+
+p a {
+    font-weight: bold;
+}
+
+.skip-to-main {
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.global-nav__list {
+    font-weight: 500;
+}
+
+/* button styles */
+.btn {
+    font-weight: 500;
+}
+
+.btn-bare {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/* hero spot section */
+.hero h2 {
+    font-size: 2.6rem;
+}
+
+.subtitle {
+    font-weight: 500;
+}
+
+/* about section */
+.exp-icon,
+.about-icon {
+    font-size: 48px;
+}
+
+/* social network icons and links */
+
+.social-icons a {
+    font-size: 38px;
+}
+
+/* Utility */
+
+.para-footer {
+    font-size: 1rem;
+}
+
+/* Begin Modal */
+.modal-heading h1 {
+    font-size: 1.6rem;
+}
+
+.modal-footer .btn {
+    font-size: 1rem;
+}
+
+.settings-menu__list-item a {
+    font-weight: 600;
+}
+
+.settings-panel__list-label {
+    font-size: 1em;
+}
+/* End Modal */
+
+@media (min-width: 768px) {
+
+    h2 {
+        font-size: 2.4rem;
+    }
+    
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .social-icons a {
+        font-size: 48px;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    h2 {
+        font-size: 3rem;
+    }
+    
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    .footer-container__item {
+        font-size: 1.2rem;
+    }
+    
+    .exp-icon,
+    .about-icon {
+        font-size: 56px;
+    }
+
+    .para-footer {
+        font-size: 1.2rem;
+    }
+
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 1.8rem;
+    }
+    /* End Modal */
+}
+
+@media (min-width: 1280px) {
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    p, ul, ol, .btn:not(.btn-bare) {
+        font-size: 1.3rem;
+    }
+
+    .footer-container__item {
+        font-size: 1.1rem;
+    }
+
+    .exp-icon,
+    .about-icon {
+        font-size: 64px;
+    }
+    
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 2rem;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.1rem;
+    }
+    /* End Modal */
+}
+
+@media (min-width: 1536px) {
+    h2 {
+        font-size: 4rem;
+    }
+    
+    h3 {
+        font-size: 2rem;
+    }
+    
+    p, ul, ol, .btn:not(.btn-bare) {
+        font-size: 1.4rem;
+    }
+
+    .footer-container__item {
+        font-size: 1.2rem;
+    }
+
+    /* Begin Modal */
+    .modal-heading h1 {
+        font-size: 2.2rem;
+    }
+
+    .modal-footer .btn {
+        font-size: 1.2rem;
+    }
+    /* End Modal */
+}

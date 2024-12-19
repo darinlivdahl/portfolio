@@ -366,7 +366,7 @@ section > .container {
     padding-left: 20px;
 }
 
-.settings-panel__list-item {
+.settings-panel__list-item:not(.settings-panel__list-item:last-child) {
     margin-bottom: .4rem;
 }
 

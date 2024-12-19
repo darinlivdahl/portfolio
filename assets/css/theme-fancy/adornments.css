@@ -1,5 +1,6 @@
-header {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+body > header {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
 }
 
 a:hover,
@@ -23,36 +24,39 @@ a:focus {
 }
 
 .global-nav__list-item a {
-    border-radius: 6px;
-    border-style: solid;
-    border-width: 2px;
-    box-shadow: -3px 5px 8px rgba(0,0,0,0.5);
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+    box-shadow: -3px 5px 8px rgba(0,0,0,0.1);
     text-decoration: none;
 }
 
-.hero:before {
-    opacity: 0.6;
-    background-image: url(./images/hero-snow-2.jpg);
-    background-repeat: no-repeat;
+.hero {
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+
+.about {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+}
+
+.hero:before,
+.about:before {
+    opacity: .1;
+    background-image: url(./images/pattern.jpg);
+    background-repeat: repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 25%;
     background-blend-mode: normal;
-}
-
-.hero h2 {
-    text-shadow: 2px 2px 8px black;
-}
-
-.hero .btn {
-    box-shadow: 0 3px 6px rgba(0,0,0,0.4);
 }
 
 /* button styles */
 .btn {
-    border-radius: 6px;
     text-decoration: none;
-    border-style: solid;
-    border-width: 3px;
+    border-style: dotted;
+    border-width: 1px;
     cursor: pointer;
 }
 
@@ -67,19 +71,11 @@ a:focus {
     text-decoration: none;
 }
 
-.about:before {
-    opacity: 0.08;
-    background-image: url(./images/north-rocky-mountains.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: multiply; /* hard-light, multiply */
-}
-
+/* About section */
 .profile-photo {
     border-radius: 50%;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
-    border: 5px solid black;
+    border-style: dotted;
+    border-width: 1px;
 }
 
 /* social network icons and links */
@@ -93,9 +89,11 @@ a:focus {
 }
 
 /* Projects */
-.projects_container__item-inner {
-    border-radius: 10px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+.project-thumb {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 
 .btn-disabled,
@@ -104,16 +102,19 @@ a:focus {
 }
 
 /* Begin Modal */
+.modal-inner {
+    border-style: dotted;
+    border-width: 1px;
+}
+
 .modal-heading {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-bottom-style: dotted;
+    border-bottom-width: 1px;
 }
 
 .modal-footer {
     border-top-width: 1px;
-    border-top-style: solid;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-style: dotted;
 }
 
 .settings-container ul {
@@ -126,19 +127,24 @@ a:focus {
 
 .settings-panel {
     border-left-width: 1px;
-    border-left-style: solid;
+    border-left-style: dotted;
 }
 
 .settings-panel__list-label {
     border-width: 1px;
-    border-style: solid;
-    border-radius: 6px;
+    border-style: dotted;
 }
 /* End Modal */
 
+@media (max-width: 767px) {
+    .hero:before,
+    .about:before {
+        background-size: 50%;
+    }
+}
+
 @media (min-width: 768px) {
     .global-nav__list-item a {
-        border: none;
         box-shadow: none;
     }
 }
@@ -156,8 +162,8 @@ a:focus {
 }
 
 @media (prefers-color-scheme: dark) {
-    .profile-photo {
-        border-color: white;
+    .global-nav__list-item a {
+        box-shadow: -3px 5px 8px rgba(0,0,0,0.3);
     }
     .about:before {
         opacity: .1;
