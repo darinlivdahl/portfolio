@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Dosis:wght@200..800&display=swap');
 
-body {
+body, button {
     font-family: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
