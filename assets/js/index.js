@@ -148,6 +148,7 @@ document.addEventListener('keydown', function(event) {
         }
     });
     // Lazy load theme stylesheets
+    // TODO: Find a better way to do this
     const themeArr = ['fancy'];
     themeArr.forEach(t => {
         var cssLink = document.createElement('link');

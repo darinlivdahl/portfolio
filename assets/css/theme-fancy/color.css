@@ -413,11 +413,6 @@ main > section {
     .settings-panel__list-label {
         border-color: #333;
     }
-
-    .settings-panel__list-label--active {
-        border-color: rgb(0,150,255);
-        background-color: #333;
-    }
     
     .settings-panel__list-item input:checked {
         accent-color: rgb(0,150,255);
