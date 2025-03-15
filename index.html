@@ -9,7 +9,7 @@
     <meta name="author" content="Darin Livdahl">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="2BSXE9kFWH3NBuEihmTJ8uIVM9tERbYYJj1_h36VkDw">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffb000" id="theme-color-light">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#859F3D" id="theme-color-light">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="black">
 
     <!-- Open Graph -->
@@ -29,7 +29,7 @@
     <link rel="manifest" href="site.webmanifest">
     <script src="https://kit.fontawesome.com/da494c0433.js" crossorigin="anonymous"></script>
     <link href="./assets/css/layout.css" rel="stylesheet">
-    <link id="theme-style" href="./assets/css/theme-default/style.css" rel="stylesheet">
+    <link id="theme-style" href="./assets/css/theme-professional/style.css" rel="stylesheet">
 </head>
 <body id="body">
     <header id="header">
@@ -60,7 +60,7 @@
         <section id="hero" class="hero section-padding--lg">
             <div class="container">
                 <h2>Hi, I&rsquo;m Darin</h2>
-                <p class="subtitle">Web Developer and UX Designer</p>
+                <p class="subtitle">Full-Stack Developer and UX Designer</p>
                 <p><a class="btn btn-primary skip-to" href="#connect">Connect</a></p>
             </div>
         </section>
@@ -85,6 +85,7 @@
                         <h3>Technical Consultant</h3>
                         <p>In the past 5+ years of my career, I&rsquo;ve focused on consulting for clients <a href="https://www.salesforce.com/trailblazer/darinlivdahl" target="_blank">trailblazing</a> on the Salesforce platform. This work has included creating enterprise-level email marketing templates in Marketing Cloud and setting up partner community sites in Experience Cloud. I&rsquo;ve also been involved in technical documentation, refining user stories, and developing with Apex and Lightning Web Components.</p>
                     </div>
+                    <!-- TODO: Add potential new role... split into 2 column 2 row -->
                 </div>
                 <p class="p-top__lg"><a class="btn btn-primary" href="https://www.linkedin.com/in/darinlivdahl" target="_blank">Experience on LinkedIn</a></p>
             </div>
@@ -98,7 +99,7 @@
                         <div class="projects_container__item-inner">
                             <h3 itemprop="name">Explore Mars</h3>
                             <a itemprop="url" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" class="project-thumb project-thumb--mars" title="Explore Mars photos"><img itemprop="image" src="./assets/images/project-explore-mars-bg.jpg" class="project-thumb-img" alt="Explore Mars website screenshot"></a>
-                            <p itemprop="description">A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fascinating way to explore the surface of Mars.</p>
+                            <p itemprop="description">A personal project created for myself to study different web technologies such as Node.js, ExpressJS, Axios and TailwindCSS. The content comes from the <a href="https://api.nasa.gov/">NASA API</a> for <a href="https://github.com/corincerami/mars-photo-api">Mars Rover Photos</a> and is a fun way to explore the surface of Mars.</p>
                             <div class="btn-container btn-container--project">
                                 <a class="btn btn-primary" href="https://mars-rovers-c61541cf71a8.herokuapp.com/" title="Explore Mars photos">Explore</a>&nbsp;
                                 <a itemprop="mainEntityOfPage" class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/mars-photos" title="Explore Mars Project on GitHub"><span class="fa-brands fa-github"></span></a>
@@ -120,7 +121,7 @@
                         <div class="projects_container__item-inner">
                             <h3 itemprop="name">Study Notes</h3>
                             <a href="#" class="project-thumb project-thumb--disabled" title=""><img itemprop="image" src="./assets/images/project-study-notes-bg.jpg" class="project-thumb-img" alt="Study Notes website screenshot"></a>
-                            <p itemprop="description">A <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/40325688#overview">Udemy course project</a> inspired me to build a study notes web application I&rsquo;d envisioned throughout the course challenges. Developed using Node.js, ExpressJS, PostgreSQL, and prototyped with Bootstrap, it fulfills a personal learning goal.</p>
+                            <p itemprop="description">A <a href="https://www.udemy.com/course/the-complete-web-development-bootcamp/learn/lecture/40325688#overview">Udemy course project</a> inspired me to build a study notes web application I&rsquo;d envisioned throughout the course challenges. Developed using Node.js, ExpressJS, PostgreSQL, and prototyped with Bootstrap.</p>
                             <div class="btn-container btn-container--project">
                                 <!-- <a class="btn btn-disabled" href="#" title="Study Notes">Study</a>&nbsp; -->
                                 <a itemprop="mainEntityOfPage" class="btn btn-primary btn-primary--outline" href="https://github.com/darinlivdahl/study-notes" title="Study Notes on GitHub"><span class="fa-brands fa-github"></span></a>
@@ -136,7 +137,7 @@
                 <div class="about-grid">
                     <div class="about-grid__profile">
                         <h2>About</h2>
-                        <img class="profile-photo" src="./assets/images/fishing-hats.jpg" alt="Auggie and I in a boat">
+                        <img class="profile-photo" src="./assets/images/fishing-hats.jpg" alt="My dog Auggie and I in a boat wearing hats" title="Auggie and Darin">
                         <p>
                             When I&rsquo;m not immersed in writing code or designing web apps, I have a few other passions that fill my time. From spending time with my adorable dog to enjoying hobbies like downhill skiing, I make the most of my offline moments.
                         </p>
@@ -241,10 +242,13 @@
                     <div class="settings-panel">
                         <ul class="settings-panel__list">
                             <li class="settings-panel__list-item">
-                                <label class="settings-panel__list-label settings-panel__list-label--active"><input type="radio" name="theme" value="default" checked /> Default</label>
+                                <label class="settings-panel__list-label"><input type="radio" name="theme" value="fancy" /> Fancy</label>
                             </li>
                             <li class="settings-panel__list-item">
-                                <label class="settings-panel__list-label"><input type="radio" name="theme" value="fancy" /> Fancy</label>
+                                <label class="settings-panel__list-label"><input type="radio" name="theme" value="legacy" checked /> Legacy</label>
+                            </li>
+                            <li class="settings-panel__list-item">
+                                <label class="settings-panel__list-label"><input type="radio" name="theme" value="professional" /> Professional</label>
                             </li>
                         </ul>
                     </div>
@@ -266,7 +270,7 @@
           "image": "https://darinlivdahl.github.io/portfolio/assets/images/fishing-hats.jpg",
           "jobTitle": "Web Developer",
           "name": "Darin Livdahl",
-          "url": "https://darinlivdahl.co"
+          "url": "https://livdahl.dev"
         }
     </script>
     <script src="./assets/js/index.js"></script>

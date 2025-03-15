@@ -1,11 +1,30 @@
+const themes = [
+    {
+        name: "fancy",
+        color: "#faf9f6"
+    },
+    {
+        name: "legacy",
+        color: "#ffb000"
+    },
+    {
+        name: "professional",
+        color: "#859F3D"
+    }
+];
+
 // Get all global navigation elements
 const globalNavigationItemElements = document.querySelectorAll(".global-nav__list li > a");
-scrollToAnchor(globalNavigationItemElements);
-closeGlobalNavigationOnMobile(globalNavigationItemElements);
+if (globalNavigationItemElements.length) {
+    scrollToAnchor(globalNavigationItemElements);
+    closeGlobalNavigationOnMobile(globalNavigationItemElements);
+}
 
 // Get all "skip to" link elements
 const skipToElements = document.querySelectorAll(".skip-to");
-scrollToAnchor(skipToElements);
+if (skipToElements.length) {
+    scrollToAnchor(skipToElements);
+}
 
 function scrollToAnchor(els) {
     for (var i = 0; i < els.length; i++) {
@@ -66,7 +85,7 @@ const btnModalSettingsSave = document.querySelector("#btn-modal-settings-save");
 const themeStyleSheet = document.querySelector("#theme-style");
 const themeOptions = document.getElementsByName("theme");
 let modalSettingsOpen = false;
-let savedTheme = "default";
+let defaultTheme = "professional";
 
 function closeModal() {
     modalSettings.classList.replace('modal--opened','modal--closed');
@@ -89,8 +108,8 @@ function updateTheme() {
         if (r.checked) {
             themeStyleSheet.setAttribute('href', getNewStyleSheetPath(r.value));
             localStorage.setItem('theme', r.value);
-            savedTheme = r.value;
-            updateThemeColor(savedTheme);
+            defaultTheme = r.value;
+            updateThemeColor(defaultTheme);
         }
     });
     closeModal();
@@ -98,12 +117,13 @@ function updateTheme() {
 
 function updateThemeColor(theme) {
     var themeColorLightEl = document.getElementById('theme-color-light');
-    if (theme === 'fancy') {
-        themeColorLightEl.setAttribute('content','#faf9f6');
-    } else {
-        themeColorLightEl.setAttribute('content','#ffb000');
-    }
+    themes.forEach(t => {
+        if (t.name === theme) {
+            themeColorLightEl.setAttribute('content',t.color);
+        }
+    });
 }
+
 // Modal event listeners
 btnSettings.addEventListener("click", openModal);
 btnModalClose.addEventListener("click", closeModal);
@@ -131,15 +151,19 @@ document.addEventListener('keydown', function(event) {
 
 (function() {
     // Get theme from localStorage if exists
-    const localStorageTheme = localStorage.getItem("theme");
+    let localStorageTheme = localStorage.getItem("theme");
     if (localStorageTheme !== null) {
+        // Fix for users who have default theme set in localStorage
+        if (localStorageTheme === 'default') {
+            localStorageTheme = 'legacy';
+        }
         themeStyleSheet.setAttribute('href', getNewStyleSheetPath(localStorageTheme));
-        savedTheme = localStorageTheme;
-        updateThemeColor(savedTheme);
+        defaultTheme = localStorageTheme;
+        updateThemeColor(defaultTheme);
     }
     // Set checked theme in settings modal on document ready
     themeOptions.forEach(opt => {
-        if (opt.value === savedTheme) {
+        if (opt.value === defaultTheme) {
             opt.checked = true;
             opt.parentElement.classList.add('settings-panel__list-label--active');
         } else {
@@ -148,14 +172,14 @@ document.addEventListener('keydown', function(event) {
         }
     });
     // Lazy load theme stylesheets
-    // TODO: Find a better way to do this
-    const themeArr = ['fancy'];
-    themeArr.forEach(t => {
+    themes.forEach(t => {
         var cssLink = document.createElement('link');
-        cssLink.href = './assets/css/theme-' + t + '/style.css';
-        cssLink.rel = 'preload';
-        cssLink.as = 'style';
-        document.getElementsByTagName('head')[0].appendChild(cssLink);
+        if (t.name !== defaultTheme) {
+            cssLink.href = './assets/css/theme-' + t.name + '/style.css';
+            cssLink.rel = 'preload';
+            cssLink.as = 'style';
+            document.getElementsByTagName('head')[0].appendChild(cssLink);
+        }
     });
 })();
 /* End settings modal */

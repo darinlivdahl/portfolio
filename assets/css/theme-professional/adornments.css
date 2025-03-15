@@ -1,0 +1,172 @@
+:root {
+    --border-radius: 3px;
+    --box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    --border-width: 2px;
+}
+
+header {
+    box-shadow: var(--box-shadow);
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.skip-to {
+    text-decoration: none;
+}
+
+.global-logo a {
+    text-decoration: none;
+    background-image: url(./images/bitmoji-darinlivdahl.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+
+.global-nav__list {
+    list-style-type: none;
+}
+
+.global-nav__list-item a {
+    border-radius: var(--border-radius);
+    border-style: solid;
+    border-width: var(--border-width);
+    box-shadow: var(--box-shadow);
+    text-decoration: none;
+}
+
+.hero:before {
+    opacity: 0.6;
+    background-image: url(./images/hero-professional.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: normal;
+}
+
+.hero h2 {
+    text-shadow: 2px 2px 8px black;
+}
+
+.hero .btn {
+    box-shadow: var(--box-shadow);
+}
+
+/* button styles */
+.btn {
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    border-style: solid;
+    border-width: var(--border-width);
+    cursor: pointer;
+}
+
+.btn-bare {
+    border-radius: 0;
+    border-style: none;
+    border-width: 0;
+}
+
+.btn:hover,
+.btn:focus {
+    text-decoration: none;
+}
+
+.about:before {
+    opacity: 0.05;
+    background-image: url(./images/spring.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: multiply; /* hard-light, multiply */
+}
+
+.profile-photo {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+/* social network icons and links */
+.social-icons {
+    list-style-type: none;
+}
+
+.para-footer {
+    border-top-width: var(--border-width);
+    border-top-style: solid;
+}
+
+/* Projects */
+.projects_container__item-inner {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+.btn-disabled,
+.project-thumb--disabled {
+    pointer-events: none;
+}
+
+/* Begin Modal */
+.modal-heading {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.modal-footer {
+    border-top-width: var(--border-width);
+    border-top-style: solid;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.settings-container ul {
+    list-style: none;
+}
+
+.settings-menu__list-item a {
+    pointer-events: none;
+}
+
+.settings-panel {
+    border-left-width: var(--border-width);
+    border-left-style: solid;
+}
+
+/* End Modal */
+
+@media (min-width: 768px) {
+    .global-nav__list-item a {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .global-logo a {
+        background-size: 80px;
+    }
+    .hero:before {
+        background-position: 0 -100px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .global-logo a {
+        background-size: 100px;
+    }
+    .hero:before {
+        background-position: 0 -180px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .profile-photo {
+        border-color: white;
+    }
+    .about:before {
+        opacity: .1;
+    }
+}
