@@ -210,9 +210,9 @@ body > header {
     color: #1F5FBF;
 }
 
-.social-icon__instagram:hover,
-.social-icon__instagram:focus {
-    color: #C13584;
+.social-icon__windows:hover,
+.social-icon__windows:focus {
+    color: #00A3EE;
 }
 
 /* Projects */
