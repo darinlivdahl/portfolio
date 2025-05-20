@@ -211,7 +211,10 @@ body > header {
     color: #00A3EE;
 }
 
-/* 405DE6 Instagram */ 
+.social-icon__instagram:hover,
+.social-icon__instagram:focus {
+    color: #405DE6;
+}
 
 /* Projects */
 
