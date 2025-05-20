@@ -149,6 +149,11 @@ main > section {
     color: #00A3EE;
 }
 
+.social-icon__instagram:hover,
+.social-icon__instagram:focus {
+    color: #405DE6;
+}
+
 /* Projects */
 .project-thumb {
     border-top-color: #c7921e;
