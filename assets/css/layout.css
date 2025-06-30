@@ -115,7 +115,7 @@ section > .container {
 
 .global-nav__list-item a {
     display: block;
-    padding: .5rem 1rem;
+    padding: .5rem;
 }
 
 .global-settings {
@@ -154,11 +154,17 @@ section > .container {
 }
 
 /* experience section */
-.experience-grid {
+.experience-grid,
+.certifications-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 2rem;
+}
+
+.certification-logo {
+    width: 80%;
+    max-width: 200px;
 }
 
 /* projects section */
@@ -469,11 +475,13 @@ section > .container {
     }
 
     .experience-grid,
+    .certifications-grid,
     .about-grid {
         gap: 40px;
     }
 
-    .experience-grid {
+    .experience-grid,
+    .certifications-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
     }
@@ -546,7 +554,7 @@ section > .container {
     }
 
     .global-nav__list { 
-        gap: 30px;
+        gap: 20px;
     }
 
     .global-settings {
@@ -554,11 +562,13 @@ section > .container {
     }
 
     .experience-grid,
+    .certifications-grid,
     .about-grid {
         gap: 50px;
     }
 
-    .experience-grid {
+    .experience-grid,
+    .certifications-grid {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
@@ -638,7 +648,11 @@ section > .container {
     }
 
     .global-nav__list { 
-        gap: 40px;
+        gap: 30px;
+    }
+
+    .global-nav__list-item a {
+        padding: .5rem 1rem;
     }
 
     .global-settings {
@@ -664,6 +678,7 @@ section > .container {
     }
 
     .experience-grid,
+    .certifications-grid,
     .about-grid {
         gap: 60px;
     }
@@ -701,7 +716,7 @@ section > .container {
     }
 
     .global-nav__list { 
-        gap: 50px;
+        gap: 40px;
     }
 
     .global-settings {
