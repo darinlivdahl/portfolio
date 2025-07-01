@@ -229,7 +229,7 @@ main > section {
     h3,
     .exp-icon,
     .about-icon {
-        color: #666;
+        color: #999;
         background-color: transparent;
     }
 
@@ -293,7 +293,7 @@ main > section {
     .btn-primary--outline {
         background-color: transparent;
         color: rgb(117,213,255);
-        border-color: #666;
+        border-color: #999;
     }
 
     .btn-primary:hover,
@@ -304,8 +304,8 @@ main > section {
 
     .btn-secondary {
         background-color: transparent;
-        color: #666;
-        border-color: #666;
+        color: #999;
+        border-color: #999;
     }
     
     .btn-secondary:hover,
@@ -386,7 +386,7 @@ main > section {
 
     .social-icon__github:hover,
     .social-icon__github:focus {
-        color: #666;
+        color: #999;
     }
 
     /* Begin Modal */

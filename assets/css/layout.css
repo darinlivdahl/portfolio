@@ -162,6 +162,15 @@ section > .container {
     margin-bottom: 2rem;
 }
 
+.certifications-grid {
+    justify-items: center;
+}
+
+.certifications-grid > div {
+    justify-self: stretch;
+    text-align: center;
+}
+
 .certification-logo {
     width: 80%;
     max-width: 200px;
