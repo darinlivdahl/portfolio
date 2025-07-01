@@ -85,7 +85,7 @@ const btnModalSettingsSave = document.querySelector("#btn-modal-settings-save");
 const themeStyleSheet = document.querySelector("#theme-style");
 const themeOptions = document.getElementsByName("theme");
 let modalSettingsOpen = false;
-let defaultTheme = "professional";
+let defaultTheme = "legacy";
 
 function closeModal() {
     modalSettings.classList.replace('modal--opened','modal--closed');

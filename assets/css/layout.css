@@ -164,6 +164,7 @@ section > .container {
 
 .certifications-grid {
     justify-items: center;
+    margin: 2rem 0 0;
 }
 
 .certifications-grid > div {
