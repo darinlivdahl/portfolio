@@ -374,7 +374,7 @@ main > section {
         }
     }
 
-    .experience, .projects, .about {
+    .experience, .certifications, .projects, .about {
         background-color: black;
         color: white;
     }

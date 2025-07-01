@@ -357,7 +357,8 @@ body > header {
         }
     }
 
-    .experience {
+    .experience,
+    .certifications {
         background-color: var(--color-foundation);
         color: var(--color-light);
     }

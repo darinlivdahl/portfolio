@@ -312,7 +312,6 @@ body > header {
 
     .btn-primary:hover,
     .btn-primary:focus {
-        
         background-color: var(--color-action-dark-active);
         border-color: var(--color-action-dark-active);
         color: var(--color-light);
@@ -367,7 +366,8 @@ body > header {
         }
     }
 
-    .experience {
+    .experience,
+    .certifications {
         background-color: var(--color-foundation);
         color: var(--color-light);
     }
