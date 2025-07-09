@@ -171,15 +171,5 @@ document.addEventListener('keydown', function(event) {
             opt.parentElement.classList.remove('settings-panel__list-label--active');
         }
     });
-    // Lazy load theme stylesheets
-    themes.forEach(t => {
-        var cssLink = document.createElement('link');
-        if (t.name !== defaultTheme) {
-            cssLink.href = './assets/css/theme-' + t.name + '/style.css';
-            cssLink.rel = 'preload';
-            cssLink.as = 'style';
-            document.getElementsByTagName('head')[0].appendChild(cssLink);
-        }
-    });
 })();
 /* End settings modal */

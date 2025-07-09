@@ -669,9 +669,10 @@ section > .container {
         margin-left: 56px;
     }
 
-    .projects-container__item {
+    /** Hold for three column layout **/
+    /* .projects-container__item {
         flex-basis: 31.33333333%;
-    }
+    } */
 
     .projects_container__item-inner h3 {
         padding-top: 1.4rem;
