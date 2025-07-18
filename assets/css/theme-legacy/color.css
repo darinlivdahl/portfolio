@@ -210,7 +210,7 @@ body > header {
     color: #1F5FBF;
 }
 
-.social-icon__windows:hover,
+/* .social-icon__windows:hover,
 .social-icon__windows:focus {
     color: #00A3EE;
 }
@@ -218,6 +218,11 @@ body > header {
 .social-icon__instagram:hover,
 .social-icon__instagram:focus {
     color: #405DE6;
+} */
+
+.social-icon__upwork:hover,
+.social-icon__upwork:focus {
+    color: #c2f4bf;
 }
 
 /* Projects */
