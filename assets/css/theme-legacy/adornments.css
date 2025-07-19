@@ -13,9 +13,9 @@ a:focus {
 
 .global-logo a {
     text-decoration: none;
-    background-image: url(./images/bitmoji-darinlivdahl.png);
+    /* background-image: url(./images/bitmoji-darinlivdahl.png);
     background-size: 60px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .global-nav__list {
@@ -32,11 +32,11 @@ a:focus {
 
 .hero:before {
     opacity: 0.6;
-    background-image: url(./images/hero-1920.jpg);
+    /* background-image: url(./images/hero-1920.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: normal;
+    background-blend-mode: normal; */
 }
 
 .hero h2 {
@@ -45,6 +45,10 @@ a:focus {
 
 .hero .btn {
     box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.video-poster {
+    border-radius: 10px;
 }
 
 /* button styles */
@@ -139,15 +143,15 @@ a:focus {
 }
 
 @media (min-width: 1280px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 80px;
-    }
+    } */
 }
 
 @media (min-width: 1536px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 100px;
-    }
+    } */
 }
 
 @media (prefers-color-scheme: dark) {

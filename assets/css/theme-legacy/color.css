@@ -67,6 +67,10 @@ body > header {
     background-color: transparent;
 }
 
+.global-logo a {
+    color: var(--color-foundation);
+}
+
 .global-nav__list-item a:hover,
 .global-nav__list-item a:focus {
     color: var(--color-primary);
@@ -301,6 +305,14 @@ body > header {
     a:hover,
     a:focus {
         color: var(--color-action-dark-active-light);
+    }
+
+    .global-logo a {
+        color: var(--color-light);
+    }
+
+    .hero {
+        background-color: var(--color-dark-gray);
     }
     
     .btn-primary {

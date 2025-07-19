@@ -8,15 +8,19 @@ a:focus {
     text-decoration: underline;
 }
 
+img:not(.certification-logo) {
+    filter: sepia(60%);
+}
+
 .skip-to {
     text-decoration: none;
 }
 
 .global-logo a {
     text-decoration: none;
-    background-image: url(./images/bitmoji-darinlivdahl.png);
+    /* background-image: url(./images/bitmoji-darinlivdahl.png);
     background-size: 60px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .global-nav__list {
@@ -32,6 +36,13 @@ a:focus {
 
 .hero {
     border-bottom-style: dotted;
+    border-bottom-width: 1px;
+}
+
+.video-poster {
+    border-top-style: dotted;
+    border-bottom-style: dotted;
+    border-top-width: 1px;
     border-bottom-width: 1px;
 }
 
@@ -145,15 +156,15 @@ a:focus {
 }
 
 @media (min-width: 1280px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 80px;
-    }
+    } */
 }
 
 @media (min-width: 1536px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 100px;
-    }
+    } */
 }
 
 @media (prefers-color-scheme: dark) {

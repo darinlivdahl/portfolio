@@ -38,6 +38,10 @@ main > section {
     background-color: transparent;
 }
 
+.global-logo a {
+    color: black;
+}
+
 .btn-bare.global-nav__toggle--active {
     color: #c7921e;
 }
@@ -107,6 +111,11 @@ main > section {
 
 /* Hero section */
 .hero, .about {
+    border-top-color: #c7921e;
+    border-bottom-color: #c7921e;
+}
+
+.video-poster {
     border-top-color: #c7921e;
     border-bottom-color: #c7921e;
 }
@@ -254,6 +263,10 @@ main > section {
         color: rgb(117,213,255);
     }
 
+    .global-logo a {
+        color: white;
+    }
+
     footer a {
         color: white;
     }
@@ -329,7 +342,7 @@ main > section {
     }
 
     /* Projects */
-    .project-thumb {
+    .project-thumb, .video-poster {
         border-top-color: rgb(117,213,255);
         border-bottom-color: rgb(117,213,255);
     }

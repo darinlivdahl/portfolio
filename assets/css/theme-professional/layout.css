@@ -30,6 +30,9 @@ body {
 }
 
 @media (min-width: 1024px) {
+    .global-nav__list {
+        gap: 0px;
+    }
     .about-grid__profile > p, .connect .container > p {
         max-width: 65%;
         margin-left: 0;

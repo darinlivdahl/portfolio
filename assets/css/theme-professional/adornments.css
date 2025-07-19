@@ -13,15 +13,19 @@ a:focus {
     text-decoration: underline;
 }
 
+img:not(.certification-logo) {
+    filter: saturate(30%);
+}
+
 .skip-to {
     text-decoration: none;
 }
 
 .global-logo a {
     text-decoration: none;
-    background-image: url(./images/bitmoji-darinlivdahl.png);
+    /* background-image: url(./images/bitmoji-darinlivdahl.png);
     background-size: 60px;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
 }
 
 .global-nav__list {
@@ -38,11 +42,11 @@ a:focus {
 
 .hero:before {
     opacity: 0.6;
-    background-image: url(./images/hero-professional.jpg);
+    /* background-image: url(./images/hero-professional.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-blend-mode: normal;
+    background-blend-mode: normal; */
 }
 
 .hero h2 {
@@ -51,6 +55,10 @@ a:focus {
 
 .hero .btn {
     box-shadow: var(--box-shadow);
+}
+
+.video-poster {
+    border-radius: 4px;
 }
 
 /* button styles */
@@ -145,18 +153,18 @@ a:focus {
 }
 
 @media (min-width: 1280px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 80px;
-    }
+    } */
     .hero:before {
         background-position: 0 -100px;
     }
 }
 
 @media (min-width: 1536px) {
-    .global-logo a {
+    /* .global-logo a {
         background-size: 100px;
-    }
+    } */
     .hero:before {
         background-position: 0 -180px;
     }
