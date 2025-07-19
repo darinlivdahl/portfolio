@@ -149,53 +149,10 @@ section > .container {
     padding-bottom: 2rem;
 }
 
-.video-container {
-    position: relative;
-    width: 100%;
-}
-
-.video-poster {
+.youtube-player {
     width: 100%;
     height: auto;
-    cursor: pointer;
-}
-
-.youtube-player {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    opacity: 0; /* Initially hide the iframe */
-    transition: opacity 0.3s ease; /* Smooth transition when iframe becomes visible */
-}
-
-.youtube-player iframe {
-    width: 100%;
     aspect-ratio: 16 / 9;
-}
-
-/* Optional: Add a play button overlay */
-.video-container::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70px; 
-    height: 52px; 
-    background-image: url('../images/play-button.svg');
-    background-size: cover;
-    pointer-events: none;
-    opacity: 30%;
-    z-index: 3;
-    transition: opacity 0.2s ease;
-}
-
-.video-container:hover.video-container::before {
-    opacity: 60%;
-}
-
-.video-container.video-playing::before {
-    display: none;
 }
 
 /* button styles */
@@ -644,11 +601,6 @@ section > .container {
 
     .hero-content__item--video {
         flex-basis: 60%;
-    }
-
-    .video-container::before {
-        width: 113px; 
-        height: 84px;
     }
 
     .experience-grid,

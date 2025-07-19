@@ -57,7 +57,7 @@ img:not(.certification-logo) {
     box-shadow: var(--box-shadow);
 }
 
-.video-poster {
+.youtube-player {
     border-radius: 4px;
 }
 

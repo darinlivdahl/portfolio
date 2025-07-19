@@ -173,26 +173,3 @@ document.addEventListener('keydown', function(event) {
     });
 })();
 /* End settings modal */
-
-/* Begin video player */
-const videoContainer = document.querySelector('.video-container');
-const videoPoster = document.querySelector('.video-poster');
-const youtubePlayer = document.querySelector('.youtube-player');
-
-function handleIntroductionVideo(e) {
-    e.preventDefault();
-    const youtubeVideoId = 'zAaSyuN9K7w';
-    const iframeSrc = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
-    const iframe = document.createElement('iframe');
-    iframe.setAttribute('src', iframeSrc);
-    iframe.setAttribute('frameborder', '0');
-    iframe.setAttribute('allowfullscreen', '');
-    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');
-    videoContainer.classList.add('video-playing');
-    youtubePlayer.appendChild(iframe);
-    youtubePlayer.style.opacity = 1; // Make the iframe visible
-    videoPoster.style.display = 'none'; // Hide the poster image
-}
-
-videoPoster.addEventListener('click', handleIntroductionVideo);
-/* End video player */
