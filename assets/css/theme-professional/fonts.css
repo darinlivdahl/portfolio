@@ -166,7 +166,7 @@ p a {
 
 @media (min-width: 1280px) {
     .hero h2 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     p, ul, ol, .btn:not(.btn-bare) {
@@ -196,6 +196,10 @@ p a {
 @media (min-width: 1536px) {
     h2 {
         font-size: 4rem;
+    }
+
+    .hero h2 {
+        font-size: 4.4rem;
     }
     
     h3 {
