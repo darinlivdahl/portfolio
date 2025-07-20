@@ -103,6 +103,7 @@ section > .container {
     right: 5px;
     top: 40px;
     width: auto;
+    min-width: 150px;
     padding: 0;
 }
 
