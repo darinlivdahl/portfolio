@@ -117,7 +117,7 @@ body > header {
 .btn-secondary:focus {
     background-color: var(--color-foundation);
     color: var(--color-light);
-    border-color: var(--color-foundation);
+    border-color: var(--color-dark-gray);
 }
 
 .btn-primary--outline {

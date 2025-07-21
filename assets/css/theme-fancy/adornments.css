@@ -40,6 +40,8 @@ img:not(.certification-logo) {
 }
 
 .youtube-player {
+    border-right: none;
+    border-left: none;
     border-top-style: dotted;
     border-bottom-style: dotted;
     border-top-width: 1px;

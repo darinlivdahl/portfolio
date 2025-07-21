@@ -48,6 +48,7 @@ a:focus {
 }
 
 .youtube-player {
+    border: none;
     border-radius: 10px;
 }
 

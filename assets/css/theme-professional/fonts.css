@@ -11,7 +11,7 @@ h1, h2, h3, h4 {
     font-weight: 600; /* baseline */
 }
 
-h2:not(.hero h2) {
+h2:not(.hero h2, .modal-heading h2) {
     font-size: 2.6rem;
     text-transform: uppercase;
     font-weight: 700;
@@ -86,8 +86,10 @@ p a {
 }
 
 /* Begin Modal */
-.modal-heading h1 {
+.modal-heading h2 {
     font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
 }
 
 .modal-footer .btn {
@@ -109,7 +111,7 @@ p a {
         font-size: 2.4rem;
     }
 
-    h2:not(.hero h2) {
+    h2:not(.hero h2, .modal-heading h2) {
         font-size: 2.8rem;
     }
     
@@ -132,7 +134,7 @@ p a {
         font-size: 3rem;
     }
 
-    h2:not(.hero h2) {
+    h2:not(.hero h2, .modal-heading h2) {
         font-size: 3rem;
     }
 
@@ -158,7 +160,7 @@ p a {
     }
 
     /* Begin Modal */
-    .modal-heading h1 {
+    .modal-heading h2 {
         font-size: 1.8rem;
     }
     /* End Modal */
@@ -183,7 +185,7 @@ p a {
     }
     
     /* Begin Modal */
-    .modal-heading h1 {
+    .modal-heading h2 {
         font-size: 2rem;
     }
 
@@ -215,7 +217,7 @@ p a {
     }
 
     /* Begin Modal */
-    .modal-heading h1 {
+    .modal-heading h2 {
         font-size: 2.2rem;
     }
 

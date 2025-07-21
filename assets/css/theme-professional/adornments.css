@@ -58,6 +58,7 @@ img:not(.certification-logo) {
 }
 
 .youtube-player {
+    border: none;
     border-radius: 4px;
 }
 

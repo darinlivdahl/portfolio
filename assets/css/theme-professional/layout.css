@@ -19,7 +19,14 @@ body {
     justify-content: flex-start;
 }
 
+.hero {
+    margin-top: 59px;
+}
+
 @media (min-width: 768px) {
+    .hero {
+        margin-top: 0;
+    }
     .project-thumb {
         margin: 1rem auto;
     }
