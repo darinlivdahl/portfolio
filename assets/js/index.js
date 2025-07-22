@@ -116,7 +116,27 @@ function updateTheme() {
 }
 
 function updateThemeColor(theme) {
-    var themeColorLightEl = document.getElementById('theme-color-light');
+    const themeColorLightEl = document.getElementById('theme-color-light');
+    const bodyEl = document.getElementById('body');
+
+    // Update theme class on body element
+    const bodyClass = bodyEl.classList;
+    if (bodyClass.length) {
+        let hasThemeClass = false;
+        bodyClass.forEach(c => {
+            if (c.startsWith('theme-')) {
+                bodyClass.replace(c, 'theme-' + theme);
+                hasThemeClass = true;
+                return false;
+            }
+        });
+        if (!hasThemeClass) {
+            bodyClass.add('theme-' + theme);
+        }
+    } else {
+        bodyClass.add('theme-' + theme);
+    }
+    // Update meta theme color
     themes.forEach(t => {
         if (t.name === theme) {
             themeColorLightEl.setAttribute('content',t.color);

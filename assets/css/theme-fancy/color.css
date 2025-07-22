@@ -1,5 +1,24 @@
+:root {
+    /* Theme colors */
+    --color-foundation: black;
+    --color-primary: #faf9f6;
+    --color-secondary: #c7921e;
+    --color-action: #faf2df;
+    /* --color-action-light: #CBA35C; */
+    /* Dark Mode */
+    --color-action-dark: rgb(0,150,255);
+    --color-action-dark-active: rgb(1,24,255);
+    --color-action-dark-active-light: rgb(117,213,255);
+    --color-action-dark-secondary: #999;
+    /* Contrast colors */
+    --color-light: white;
+    --color-gray: #ccc;
+    --color-dark-gray: #333;
+    --color-light-gray: #ebebeb;
+}
+
 h2 {
-    color: black;
+    color: var(--color-foundation);
     background-color: transparent;
 }
 
@@ -8,12 +27,12 @@ h3,
 .about-icon,
 .global-settings:hover,
 .global-settings:focus {
-    color: #c7921e;
+    color: var(--color-secondary);
     background-color: transparent;
 }
 
 a {
-    color: #000;
+    color: var(--color-foundation);
 }
 
 footer a:hover,
@@ -23,84 +42,84 @@ footer a:focus {
 
 body > header,
 .hero {
-    border-bottom-color: #c7921e;
+    border-bottom-color: var(--color-secondary);
 }
 
 body > header,
 body > footer,
 main > section {
-    background-color: #faf9f6;
-    color: black;
+    background-color: var(--color-primary);
+    color: var(--color-foundation);
 }
 
 .skip-to-main {
-    color: black;
+    color: var(--color-foundation);
     background-color: transparent;
 }
 
 .global-logo a {
-    color: black;
+    color: var(--color-foundation);
 }
 
 .btn-bare.global-nav__toggle--active {
-    color: #c7921e;
+    color: var(--color-secondary);
 }
 
 .global-nav__list-item a {
-    color: black;
+    color: var(--color-foundation);
     background-color: transparent;
     transition: color 400ms;
-    border-color: #c7921e;
+    border-color: var(--color-secondary);
 }
 
 @media screen and (max-width: 767px) {
     .global-nav__list-item a {
-        color: black;
-        background-color: #faf2df;
+        color: var(--color-foundation);
+        background-color: var(--color-action);
     }
     .global-nav__list-item a:hover,
     .global-nav__list-item a:focus {
-        color: #c7921e;
-        border-color: black;
+        color: var(--color-secondary);
+        border-color: var(--color-foundation);
     }
 }
 
 /* button styles */
 .btn {
     transition: background-color 400ms, color 400ms, border-color 400ms;
-    border-color: #c7921e;
+    border-color: var(--color-secondary);
 }
 
 .btn-primary {
-    background-color: #faf2df;
-    color: black;
+    background-color: var(--color-action);
+    color: var(--color-foundation);
 }
 
 .btn-secondary {
-    background-color: #ebebeb;
-    color: black;
-    border-color: #ccc;
+    background-color: var(--color-light-gray);
+    color: var(--color-foundation);
+    border-color: var(--color-gray);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: #faf2df;
-    color: #c7921e;
-    border-color: #c7921e;
+    background-color: var(--color-action);
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
 }
 
 .btn-primary--outline {
-    background-color: white;
+    background-color: var(--color-light);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: #c7921e;
-    border-color: black;
+    color: var(--color-secondary);
+    border-color: var(--color-foundation);
 }
 
 .btn-bare {
-    color: black;
+    color: var(--color-foundation);
     background-color: transparent;
 }
 
@@ -111,25 +130,25 @@ main > section {
 
 /* Hero section */
 .hero, .about {
-    border-top-color: #c7921e;
-    border-bottom-color: #c7921e;
+    border-top-color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
 }
 
-.video-poster {
-    border-top-color: #c7921e;
-    border-bottom-color: #c7921e;
+.youtube-player {
+    border-top-color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
 }
 
 /* about section */
 .profile-photo {
-    border-color: #c7921e;
+    border-color: var(--color-secondary);
 }
 
 /* connect section */
 
 /* social network icons and links */
 .social-icons a {
-    color: black;
+    color: var(--color-foundation);
     transition: color 400ms;
 }
 
@@ -140,7 +159,7 @@ main > section {
 
 .social-icon__github:hover,
 .social-icon__github:focus {
-    color: #c7921e;
+    color: var(--color-secondary);
 }
 
 .social-icon__codepen:hover,
@@ -170,18 +189,18 @@ main > section {
 
 /* Projects */
 .project-thumb {
-    border-top-color: #c7921e;
-    border-bottom-color: #c7921e;
+    border-top-color: var(--color-secondary);
+    border-bottom-color: var(--color-secondary);
 }
 
 .project-thumb:hover,
 .project-thumb:focus {
-    border-top-color: black;
-    border-bottom-color: black;
+    border-top-color: var(--color-foundation);
+    border-bottom-color: var(--color-foundation);
 }
 
 .project-thumb--mars {
-    background-color: #c7921e;
+    background-color: var(--color-secondary);
 }
 
 .project-thumb--mars .project-thumb-img {
@@ -194,32 +213,32 @@ main > section {
 }
 
 .modal-inner {
-    border-color: #333;
+    border-color: var(--color-dark-gray);
 }
 
 .modal-heading {
-    border-bottom-color: #c7921e;
+    border-bottom-color: var(--color-secondary);
 }
 
 .modal-heading, .modal-body, .modal-footer {
-    color: black;
-    background-color: #faf9f6;
+    color: var(--color-foundation);
+    background-color: var(--color-primary);
 }
 
 .modal-footer {
-    border-top-color: #c7921e;
+    border-top-color: var(--color-secondary);
 }
 
 .settings-menu__list-item a {
-    color: black;
+    color: var(--color-foundation);
 }
 
 .settings-panel {
-    border-left-color: #c7921e;
+    border-left-color: var(--color-secondary);
 }
 
 .settings-panel__list-item input:checked {
-    accent-color: #c7921e;
+    accent-color: var(--color-secondary);
 }
 /* End Modal */
 
@@ -231,152 +250,152 @@ main > section {
 
     .global-nav__list-item a:hover,
     .global-nav__list-item a:focus {
-        border-bottom-color: #c7921e;
+        border-bottom-color: var(--color-secondary);
     }
 }
 
 @media (prefers-color-scheme: dark) {
     h2 {
-        color: white;
+        color: var(--color-light);
     }
 
     h3,
     .exp-icon,
     .about-icon {
-        color: #999;
+        color: var(--color-action-dark-secondary);
         background-color: transparent;
     }
 
     body > header,
     .hero {
-        border-bottom-color: #333;
+        border-bottom-color: var(--color-dark-gray);
     }
 
     body > header,
     body > footer,
     main > section {
-        background-color: black;
-        color: white;
+        background-color: var(--color-foundation);
+        color: var(--color-light);
     }
 
     a {
-        color: rgb(117,213,255);
+        color: var(--color-action-dark-active-light);
     }
 
     .global-logo a {
-        color: white;
+        color: var(--color-light);
     }
 
     footer a {
-        color: white;
+        color: var(--color-light);
     }
 
     a:hover,
     a:focus {
-        color: rgb(0,150,255);
+        color: var(--color-action-dark);
     }
 
     /* Global nav */
     .global-nav__list-item a:hover,
     .global-nav__list-item a:focus {
-        border-color: #ccc;
+        border-color: var(--color-gray);
     }
 
     .global-nav__toggle--active {
-        color: white;
+        color: var(--color-light);
     }
 
     .global-nav__list-item a {
-        color: white;
-        background-color: black;
+        color: var(--color-light);
+        background-color: var(--color-foundation);
     }
 
     .global-settings:hover,
     .global-settings:focus {
-        color: rgb(117,213,255);
+        color: var(--color-action-dark-active-light);
         background-color: transparent;
     }
 
     .global-settings:active {
-        color: rgb(0,150,255);
+        color: var(--color-action-dark);
     }
     
     /* Buttons */
     .btn-primary {
-        background-color: #333;
-        border-color: rgb(117,213,255);
-        color: rgb(117,213,255);
+        background-color: var(--color-dark-gray);
+        border-color: var(--color-action-dark-active-light);
+        color: var(--color-action-dark-active-light);
     }
 
     .btn-primary--outline {
         background-color: transparent;
-        color: rgb(117,213,255);
-        border-color: #999;
+        color: var(--color-action-dark-active-light);
+        border-color: var(--color-action-dark-secondary);
     }
 
     .btn-primary:hover,
     .btn-primary:focus {
-        border-color: rgb(0,150,255);
-        color: rgb(0,150,255);
+        border-color: var(--color-action-dark);
+        color: var(--color-action-dark);
     }
 
     .btn-secondary {
         background-color: transparent;
-        color: #999;
-        border-color: #999;
+        color: var(--color-action-dark-secondary);
+        border-color: var(--color-action-dark-secondary);
     }
     
     .btn-secondary:hover,
     .btn-secondary:focus {
         background-color: transparent;
-        color: rgb(0,150,255);
-        border-color: rgb(0,150,255);
+        color: var(--color-action-dark);
+        border-color: var(--color-action-dark);
     }
     
     .btn-bare {
-        color: white;
+        color: var(--color-light);
     }
 
     .btn-bare.global-nav__toggle--active {
-        color: rgb(117,213,255);
+        color: var(--color-action-dark-active-light);
     }
 
     /* Projects */
-    .project-thumb, .video-poster {
-        border-top-color: rgb(117,213,255);
-        border-bottom-color: rgb(117,213,255);
+    .project-thumb, .youtube-player {
+        border-top-color: var(--color-action-dark-active-light);
+        border-bottom-color: var(--color-action-dark-active-light);
     }
 
     .project-thumb:hover,
     .project-thumb:focus {
-        border-top-color: rgb(0,150,255);
-        border-bottom-color: rgb(0,150,255);
+        border-top-color: var(--color-action-dark);
+        border-bottom-color: var(--color-action-dark);
     }
 
     .project-thumb--mars {
-        background-color: #333;
+        background-color: var(--color-dark-gray);
     }
 
     /* About section */
     .hero, .about {
-        border-top-color: #333;
-        border-bottom-color: #333;
+        border-top-color: var(--color-dark-gray);
+        border-bottom-color: var(--color-dark-gray);
     }
 
     .profile-photo {
-        border-color: #333;
+        border-color: var(--color-dark-gray);
     }
 
     @media screen and (max-width: 767px) {
         .global-nav__list-item a {
-            background-color: #333;
-            color: rgb(117,213,255);
-            border-color: rgb(117,213,255);
+            background-color: var(--color-dark-gray);
+            color: var(--color-action-dark-active-light);
+            border-color: var(--color-action-dark-active-light);
         }
         .global-nav__list-item a:hover,
         .global-nav__list-item a:focus {
-            color: rgb(0,150,255);
-            border-color: rgb(0,150,255);
+            color: var(--color-action-dark);
+            border-color: var(--color-action-dark);
         }
     }
 
@@ -388,23 +407,23 @@ main > section {
     
         .global-nav__list-item a:hover,
         .global-nav__list-item a:focus {
-            border-bottom-color: rgb(117,213,255);
+            border-bottom-color: var(--color-action-dark-active-light);
         }
     }
 
     .experience, .certifications, .projects, .about {
-        background-color: black;
-        color: white;
+        background-color: var(--color-foundation);
+        color: var(--color-light);
     }
 
     /* social network icons and links */
     .social-icons a {
-        color: white;
+        color: var(--color-light);
     }
 
     .social-icon__github:hover,
     .social-icon__github:focus {
-        color: #999;
+        color: var(--color-action-dark-secondary);
     }
 
     .social-icon__upwork:hover,
@@ -414,36 +433,36 @@ main > section {
 
     /* Begin Modal */
     .modal-heading {
-        color: white;
-        background-color: #333;
-        border-bottom-color: #333;
+        color: var(--color-light);
+        background-color: var(--color-dark-gray);
+        border-bottom-color: var(--color-dark-gray);
     }
 
     .modal-body {
-        color: white;
-        background-color: black;
+        color: var(--color-light);
+        background-color: var(--color-foundation);
     }
 
     .modal-footer {
-        color: white;
-        background-color: #333;
-        border-top-color: #333;
+        color: var(--color-light);
+        background-color: var(--color-dark-gray);
+        border-top-color: var(--color-dark-gray);
     }
 
     .settings-panel {
-        border-left-color: #333;
+        border-left-color: var(--color-dark-gray);
     }
 
     .settings-menu__list-item a {
-        color: white;
+        color: var(--color-light);
     }
     
     .settings-panel__list-label {
-        border-color: #333;
+        border-color: var(--color-dark-gray);
     }
     
     .settings-panel__list-item input:checked {
-        accent-color: rgb(0,150,255);
+        accent-color: var(--color-action-dark);
     }
     /* End Modal */
 }
