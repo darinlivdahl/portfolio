@@ -181,6 +181,8 @@ section > .container {
 }
 
 .certifications-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     justify-items: center;
     margin: 2rem 0 0;
 }
@@ -507,8 +509,7 @@ section > .container {
         gap: 40px;
     }
 
-    .experience-grid,
-    .certifications-grid {
+    .experience-grid {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr auto;
     }
@@ -609,9 +610,13 @@ section > .container {
         gap: 50px;
     }
 
-    .experience-grid,
-    .certifications-grid {
+    .experience-grid {
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .certifications-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
     }
 
