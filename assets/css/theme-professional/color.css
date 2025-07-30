@@ -113,8 +113,8 @@ body > header {
 
 .btn-primary--outline {
     background-color: transparent;
-    border: 2px solid var(--color-action);
-    color: var(--color-action);
+    border: 2px solid var(--color-action-light);
+    color: var(--color-action-light);
 }
 
 .btn-primary:hover,
